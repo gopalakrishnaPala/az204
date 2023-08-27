@@ -60,3 +60,4 @@ New-AzFunctionApp -Name $FunctionAppname -StorageAccountName $StorageName -Locat
 # Step 7: Verify the created Function App
 <pre>
 Get-AzFunctionApp
+</pre>
