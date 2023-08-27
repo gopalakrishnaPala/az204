@@ -6,7 +6,7 @@ This document outlines the steps to create an Azure Function in Azure Portal.
 
 1. Go to [Azure Portal](https://portal.azure.com/).
 2. Sign in with your Azure account.
-![Azure Portal]('images/1_1_AzurePortal.png')
+![Azure Portal](images/1_1_AzurePortal.png)
 
 ## Step 2: Create an Azure Function App
 
