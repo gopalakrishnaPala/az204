@@ -3,61 +3,57 @@
 Connect-AzAccount
 ```
 
-# Step 2: Set the Subscription
-<pre>
-<span class='comment'>-- Get all subscriptions </span>
-Get-AzSubscription 
-
-<span class='comment'>-- Set the Subscription</span>
-$Subscription="&lt;subscription id&gt;"
+### Set the Subscription
+```cmd
+$Subscription="<subscription id>"
 Select-AzSubscription -SubscriptionId "$Subscription"
-</pre>
+```
 
-# Step 3: Set the Parameters for creating Azure Function App
-<pre>
-<span class='comment'>-- Resource Group Name </span>
-$ResourceGroupName='gp-fnapp'
+```cmd
+# To get all the subscriptions
+# Get-AzSubscription 
+```
 
-<span class='comment'>-- Function App Name </span>
-$FunctionAppName='gpdemo2fn'
+### Set the Parameters for creating Azure Function App
+```cmd
+$ResourceGroupName='gp-fnapp' # Resource Group Name
 
-<span class='comment'>-- Function Version Name - Allowed value 2, 3, 5 </span>
-$FunctionsVersion='4'
+$FunctionAppName='gpdemo2fn' # Function App Name 
 
-<span class='comment'>-- Storage Account Name required by Function App </span>
-$StorageName='gpdemo2fnstorage'
+$FunctionsVersion='4' #Function Version Name - Allowed value 2, 3, 4
 
-<span class='comment'>-- To list all the azure locations use</span>
-Get-AzLocation
+$StorageName='gpdemo2fnstorage' # Storage Account Name required by Function App
 
-<span class='comment'>-- To filter locations from india </span>
-Get-AzLocation | Where-Object {$_.DisplayName -contains "India"} 
+$Location='southindia' # Resource Location
 
-<span class='comment'>-- Resource Location </span>
-$Location='southindia'
+$StorageSku='Standard_LRS' #  Storage Sku
 
-<span class='comment'>-- Storage Sku </span>
-$StorageSku='Standard_LRS'
+$RunTime='DotNet' # Function Run time
+```
 
-<span class='comment'>-- Function Run time</span>
-$RunTime='DotNet'
-</pre>
+```cmd
+# To list all the azure locations use
+#   Get-AzLocation
+# To filter locations from india
+#   Get-AzLocation | Where-Object {$_.DisplayName -contains "India"}
+```
 
-# Step 4: Create Resource Group
-<pre>
+### Create Resource Group
+```cmd
 New-AzResourceGroup -Name $ResourceGroupName -Location $Location
-</pre>
+```
 
-# Step 5: Create a storage account required for Azure Function App
-<pre>
+### Create a storage account required for Azure Function App
+```
 New-AzStorageAccount -Name $StorageName -ResourceGroup $ResourceGroupName -Location $Location -SkuName $StorageSku
-</pre>
+```
 
-# Step 6: Create Azure Function App
-<pre>
+### Create Azure Function App
+```cmd
 New-AzFunctionApp -Name $FunctionAppname -StorageAccountName $StorageName -Location $Location -ResourceGroupName $ResourceGroupName -FunctionsVersion $FunctionsVersion -RunTime $RunTime
+```
 
-# Step 7: Verify the created Function App
-<pre>
+### Verify the created Function App
+```cmd
 Get-AzFunctionApp
-</pre>
+```
