@@ -1,7 +1,7 @@
-# Step 1: Login to Azure Acount
-<pre>
+## Step 1: Login to Azure Acount
+```
 Connect-AzAccount
-</pre>
+```
 
 # Step 2: Set the Subscription
 <pre>
