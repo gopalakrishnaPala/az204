@@ -2,7 +2,6 @@
 <pre>
 Connect-AzAccount
 </pre>
-<br />
 
 # Step 2: Set the Subscription
 <pre>
@@ -13,7 +12,6 @@ Get-AzSubscription
 $Subscription="&lt;subscription id&gt;"
 Select-AzSubscription -SubscriptionId "$Subscription"
 </pre>
-<br />
 
 # Step 3: Set the Parameters for creating Azure Function App
 <pre>
@@ -44,24 +42,20 @@ $StorageSku='Standard_LRS'
 <span class='comment'>-- Function Run time</span>
 $RunTime='DotNet'
 </pre>
-<br />
 
 # Step 4: Create Resource Group
 <pre>
 New-AzResourceGroup -Name $ResourceGroupName -Location $Location
 </pre>
-<br />
 
 # Step 5: Create a storage account required for Azure Function App
 <pre>
 New-AzStorageAccount -Name $StorageName -ResourceGroup $ResourceGroupName -Location $Location -SkuName $StorageSku
 </pre>
-<br />
 
 # Step 6: Create Azure Function App
 <pre>
 New-AzFunctionApp -Name $FunctionAppname -StorageAccountName $StorageName -Location $Location -ResourceGroupName $ResourceGroupName -FunctionsVersion $FunctionsVersion -RunTime $RunTime
-</pre>
 
 # Step 7: Verify the created Function App
 <pre>
