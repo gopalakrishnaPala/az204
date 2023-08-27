@@ -1,13 +1,3 @@
-<style>
-    pre {
-        font-size: 24px; 
-    }
-
-    .comment {
-        color: green;
-    }
-</style>
-
 # Step 1: Login to Azure Acount
 <pre>
 Connect-AzAccount
