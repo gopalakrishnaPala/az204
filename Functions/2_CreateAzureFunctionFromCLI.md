@@ -17,7 +17,7 @@ az login
 # Step 2: Set the Subscription
 <pre>
 <span class='comment'>-- Get the Subscription id from the Portal</span>
-subscription="subscription id"
+subscription="&lt;subscription id&gt;"
 
 <span class='comment'>-- Set the Subscription</span>
 az account set -s $subscription
