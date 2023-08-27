@@ -16,41 +16,41 @@ az login
 
 # Step 2: Set the Subscription
 <pre>
-<span class='comment'>Get the Subscription id from the Portal</span>
+<span class='comment'>-- Get the Subscription id from the Portal</span>
 subscription="subscription id"
 
-<span class='comment'>Set the Subscription</span>
+<span class='comment'>-- Set the Subscription</span>
 az account set -s $subscription
 </pre>
 <br />
 
 # Step 3: Set the Parameters for creating Azure Function App
 <pre>
-<span class='comment'>Resource Group Name </span>
+<span class='comment'>-- Resource Group Name </span>
 resourceGroupName='gp-fnapp'
 
-<span class='comment'>Function App Name </span>
+<span class='comment'>-- Function App Name </span>
 functionAppName='gpdemo2fn'
 
-<span class='comment'>Function Version Name - Allowed value 2, 3, 5 </span>
+<span class='comment'>-- Function Version Name - Allowed value 2, 3, 5 </span>
 functionsVersion='4'
 
-<span class='comment'>Storage Account Name required by Function App </span>
+<span class='comment'>-- Storage Account Name required by Function App </span>
 storageName='gpdemo2fnstorage'
 
-<span class='comment'>Resource Location </span>
+<span class='comment'>-- Resource Location </span>
 location='southindia'
 
-<span class='comment'>Storage Sku </span>
+<span class='comment'>-- Storage Sku </span>
 storageSku='Standard_LRS'
 
-<span class='comment'>To list all the azure locations use</span>
+<span class='comment'>-- To list all the azure locations use</span>
 az account list-locations 
 
-<span class='comment'>We can use jq library to query json in terminal</span>
+<span class='comment'>-- We can use jq library to query json in terminal</span>
 brew install jq
 
-<span class='comment'>To list only names of azure locations</span>
+<span class='comment'>-- To list only names of azure locations</span>
 az account list-locations | jq -r '.[].name'
 </pre>
 <br />
@@ -68,12 +68,9 @@ az functionapp create --name $functionAppName --resource-group $resourceGroupNam
 
 # Step 6: Verify the created Function App
 <pre>
-<span class='comment'>Get all function apps</span>
+<span class='comment'>-- Get all function apps</span>
 az functionapp list
 
-<span class='comment'>To get only the function app names</span>
+<span class='comment'>-- To get only the function app names</span>
 az functionapp list | jq -r '.[].name'
 </pre>
-
-
-
