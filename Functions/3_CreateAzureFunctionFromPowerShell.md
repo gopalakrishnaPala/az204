@@ -1,5 +1,5 @@
-## Step 1: Login to Azure Acount
-```
+### Login to Azure Acount
+```cmd
 Connect-AzAccount
 ```
 
