@@ -28,7 +28,7 @@ CDN is a
 
 ```mermaid
 graph TD;
-    Web Server-->CDN;
+    WebServer-->CDN;
     CDN-->CDN1;
     CDN-->CDN2;
     CDN-->CDN3;
