@@ -28,10 +28,13 @@ CDN is a
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    Web Server-->CDN;
+    CDN-->CDN1;
+    CDN-->CDN2;
+    CDN-->CDN3;
+    CDN1-->USER1;
+    CDN2-->USER2;
+    CDN3-->USER3;
 ```
 
 
