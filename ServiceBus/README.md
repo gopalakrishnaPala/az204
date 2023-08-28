@@ -51,5 +51,23 @@ Auto-delete on idle enables you to specify an idle interval after which the queu
 #### Duplicate detection
 If an error occurs that causes the client to have any doubt about the outcome of a send operation, duplicate detection takes the doubt out of these situations by enabling the sender to resend the same message, and the queue or topic discards any duplicate copies.
 
+## Create Azure Service Bus Component
+- Using ![Azure CLI](1_CreateAzureServiceBusCLI.md)
+
+## Publish Messages to Service Bus - .NET Client
+
+- Install Nuget Package Packages
+    ```
+    Azure.Messaging.ServiceBus
+    NewtonSoft.Json
+    ```
+- Go to Service Bus namespace -*Shared access policies* and Create a new Policy
+- Get the 
+
+
+### Delete the Resource Group
+```
+az group delete --name $resourceGroup
+```
 
 
