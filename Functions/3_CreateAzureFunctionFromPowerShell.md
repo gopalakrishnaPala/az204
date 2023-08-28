@@ -16,10 +16,10 @@ Select-AzSubscription -SubscriptionId "$Subscription"
 
 ### Set the Parameters for creating Azure Function App
 ```cmd
-$ResourceGroupName='gp-fnapp'       # Resource Group Name
-$FunctionAppName='gpdemo2fn'        # Function App Name 
+$ResourceGroupName='gp-az204'       # Resource Group Name
+$FunctionAppName='gpdemofn'         # Function App Name 
 $FunctionsVersion='4'               # Function Version Name - Allowed value 2, 3, 4
-$StorageName='gpdemo2fnstorage'     # Storage Account Name required by Function App
+$StorageName='gpdemofnstorage'      # Storage Account Name required by Function App
 $Location='southindia'              # Resource Location
 $StorageSku='Standard_LRS'          # Storage Sku
 $RunTime='DotNet'                   # Function Run time

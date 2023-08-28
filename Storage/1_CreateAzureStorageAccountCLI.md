@@ -13,20 +13,25 @@ az account set -s $subscriptionid   # Set the Subscription
 ```
 
 ```cmd
-az account list # To get the subscription details
+az account list                     # To get the subscription details
 ```
 
 # Set the Parameters for creating Azure Function App
 ```cmd
 resourceGroupName='gp-az204'        # Resource Group Name 
-storageName='gpdemo2storage'        # Storage Account Name
+storageName='gpdemostorage'         # Storage Account Name
 location='southindia'               # Resource Location
 storageSku='Standard_LRS'           # Storage Sku
 ```
 
+### Create Resource Group
+```cmd
+az group create --name $resourceGroupName --location $location
+```
+
 ### Create a storage account
 ```cmd
-az storage account create --name $storageName --resource-group $resourceGroupName --consumption-plan-location $location --sku $storageSku
+az storage account create --name $storageName --resource-group $resourceGroupName --location $location --sku $storageSku
 ```
 
 ### Verify the created Function App

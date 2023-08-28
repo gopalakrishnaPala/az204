@@ -22,6 +22,21 @@ cd HttpTrigger
 func new --name HttpExample --template "HTTP trigger" --authlevel "anonymous"
 ```
 
+## Available Triggers for C#
+    1. QueueTrigger
+    2. HttpTrigger
+    3. BlobTrigger
+    4. TimerTrigger
+    5. KafkaTrigger
+    6. KafkaOutput
+    7. DurableFunctionsOrchestration
+    8. SendGrid
+    9. EventHubTrigger
+    10. ServiceBusQueueTrigger
+    11. ServiceBusTopicTrigger
+    12. EventGridTrigger
+    13. CosmosDBTrigg
+
 # Run a function locally
 1. Run your function by starting the local Azure Functions runtime host
 ```cmd

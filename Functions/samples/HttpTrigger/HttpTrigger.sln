@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1704.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobTrigger", "BlobTrigger.csproj", "{4510ED8E-DBC2-4967-B098-F0BEBFC31F4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpTrigger", "HttpTrigger.csproj", "{7A09F6B6-707D-43F9-94FA-164B27D5381C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4510ED8E-DBC2-4967-B098-F0BEBFC31F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4510ED8E-DBC2-4967-B098-F0BEBFC31F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4510ED8E-DBC2-4967-B098-F0BEBFC31F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4510ED8E-DBC2-4967-B098-F0BEBFC31F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A09F6B6-707D-43F9-94FA-164B27D5381C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A09F6B6-707D-43F9-94FA-164B27D5381C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A09F6B6-707D-43F9-94FA-164B27D5381C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A09F6B6-707D-43F9-94FA-164B27D5381C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1EB40D35-8F74-47CF-9C69-B9486FBA1687}
+		SolutionGuid = {5630DECF-8DA0-439B-BC27-EC5AE662BF6C}
 	EndGlobalSection
 EndGlobal

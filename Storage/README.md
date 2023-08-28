@@ -11,9 +11,12 @@
 - Premium
     - Block Blobs
     - File Shares (If want to support, Server Message Block (SMB) and NFS file share)
-    - Page Blogs
+    - Page Blobs
 
-## Types of Blos
+## Create Storage Account
+- Using [Azure CLI](./1_CreateAzureStorageAccountCLI.md).
+
+## Types of Blobs
 - *Block Blobs* - are composed of blocks and ideal for storing text or binary files, and for uploading large files efficiently
 - *Append Blobs* - are also composed of blocks, but they are optimized for append scenarios, making them ideal for logging scenarios
 - *Page Blogs* - are made up of 512-byte pages upto 8 TB in total size and are designed for frequent random read/write operations  

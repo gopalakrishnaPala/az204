@@ -18,7 +18,7 @@ az account list # To get the subscription details
 
 # Set the Parameters for creating Azure Function App
 ```cmd
-resourceGroupName='gp-fnapp'        # Resource Group Name 
+resourceGroupName='gp-az204'        # Resource Group Name 
 functionAppName='gpdemo2fn'         # Function App Name
 functionsVersion='4'                # Function Version Name - Allowed value 2, 3, 4 
 storageName='gpdemo2fnstorage'      # Storage Account Name required by Function App
@@ -37,9 +37,14 @@ az account list-locations
  az account list-locations | jq -r '.[].name' # query all azure location names
  ```
 
+ ### Create Resource Group
+```cmd
+az group create --name $resourceGroupName --location $location
+```
+
 ### Create a storage account required for Azure Function App
 ```cmd
-az storage account create --name $storageName --resource-group $resourceGroupName --consumption-plan-location $location --sku $storageSku
+az storage account create --name $storageName --resource-group $resourceGroupName --location $location --sku $storageSku
 ```
 
 ### Create Azure Function App
