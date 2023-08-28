@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/gopalakrishnapala/Gopal/Learning/AZ 204/az204/ServiceBus/samples/ServiceBusQueuePublisher/ServiceBusQueuePublisher.csproj": {}
+  },
+  "projects": {
+    "/Users/gopalakrishnapala/Gopal/Learning/AZ 204/az204/ServiceBus/samples/ServiceBusQueuePublisher/ServiceBusQueuePublisher.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gopalakrishnapala/Gopal/Learning/AZ 204/az204/ServiceBus/samples/ServiceBusQueuePublisher/ServiceBusQueuePublisher.csproj",
+        "projectName": "ServiceBusQueuePublisher",
+        "projectPath": "/Users/gopalakrishnapala/Gopal/Learning/AZ 204/az204/ServiceBus/samples/ServiceBusQueuePublisher/ServiceBusQueuePublisher.csproj",
+        "packagesPath": "/Users/gopalakrishnapala/.nuget/packages/",
+        "outputPath": "/Users/gopalakrishnapala/Gopal/Learning/AZ 204/az204/ServiceBus/samples/ServiceBusQueuePublisher/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gopalakrishnapala/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.16.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
