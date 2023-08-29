@@ -1,4 +1,30 @@
-﻿<Properties StartupConfiguration="{88581219-65A2-49E5-BF28-9AED274C78F1}|Default">
+﻿<Properties StartupConfiguration="{8F901854-BB3F-4CAD-A261-C0FAEA711F18}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ServiceBusMessagePublisher FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../ServiceBusMessagePublisherManagedIdentity/Program.cs">
+    <Files>
+      <File FileName="Program.cs" Line="19" Column="5" />
+      <File FileName="README.md" Line="17" Column="32" />
+      <File FileName="../ServiceBusMessagePublisherManagedIdentity/Program.cs" Line="10" Column="1" />
+      <File FileName="Order.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ServiceBusMessagePublisher" expanded="True">
+            <Node name="ServiceBusMessagePublisher" expanded="True" />
+            <Node name="ServiceBusMessagePublisherManagedIdentity" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ServiceBusMessagePublisher PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ServiceBusMessagePublisherManagedIdentity PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
