@@ -16,7 +16,9 @@ subscription2='sbs-gp-az204-2'
 ```
 
 ### Create Resource Group
+```
 az group create --name $resourceGroup --location $location
+```
 
 ### Create Service Bus Namespace
 ```
@@ -38,4 +40,9 @@ az servicebus topic create --name $topic --namespace $namespace --resource-group
 az servicebus topic subscription create --name $subscription1 --topic $topic --namespace $namespace --resource-group $resourceGroup
 
 az servicebus topic subscription create --name $subscription2 --topic $topic --namespace $namespace --resource-group $resourceGroup
+```
+
+### Delete the Resource Group
+```
+az group delete --name $resourceGroup
 ```
