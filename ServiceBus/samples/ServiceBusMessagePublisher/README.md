@@ -15,6 +15,9 @@
     az servicebus namespace authorization-rule create --resource-group $resourceGroup --namespace $namespace --name publisher --rights Send
     ```
     - Get the connection string
+    ```
+    az servicebus namespace authorization-rule keys list --resource-group $resourceGroup --namespace $namespace --name publisher 
+    ```
 
 - Sending message to Service Bus Queue
     ```csharp
