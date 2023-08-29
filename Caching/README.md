@@ -220,3 +220,8 @@ var lazyConnection = new Lazy<ConnectionMultiPlexer>(() =>
 );
 ```
 
+### SSL Configuration
+- Advanced Settings - Allow only SSL
+- Minimum TLS Version - 1, 1.1, 1.2
+*Performance over head to SSL Connection*
+
