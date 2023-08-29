@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "TREAkBekB/i5Sr0+MUX0n1S6PI+jSmNB4xeVfxrSFRU7Bs8+BO9X60unnois4b1gpWvbW3saNWs1UBc8KX/7aw==",
+  "success": true,
+  "projectFilePath": "C:\\Learning\\az204\\Caching\\samples\\AzureRedisCacheConsole\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GopalakrishnaPala\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\GopalakrishnaPala\\.nuget\\packages\\stackexchange.redis\\2.6.122\\stackexchange.redis.2.6.122.nupkg.sha512",
+    "C:\\Users\\GopalakrishnaPala\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

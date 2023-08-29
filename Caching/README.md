@@ -135,7 +135,7 @@ var flushallResult = cache.Execute("FLUSHALL"); //OK
 var key = "greeting";
 var greeting = cache.StringGet(key); // 
 var setResult = cache.StringSet(key, "Hello from Console"); // True
-greeting = cache.StringSet(key);
+greeting = cache.StringGet(key);
 cache.Execute("CLIENT", "LIST");
 cache.StringSet("ExpiringMessage", "Hi, I expire", TimeSpan.FromSeconds(10));
 lazyConnection.Value.Dispose();
@@ -160,6 +160,7 @@ lazyConnection.Value.Dispose();
 ##### Cache-aside Pattern
 ```mermaid
 graph TD;
+    User-->Application;
     Application-->DataStore;
     DataStore-->Application;
     Application-->RedisCache;
