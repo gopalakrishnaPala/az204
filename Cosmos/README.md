@@ -167,6 +167,7 @@
     - **Automated Scale-Out** - Cosmos DB transparently splits partitions to manage growth
 
 ```mermaid
+graph TD;
     Container-->PhysicalPartition1;
     Container-->PhysicalPartition2;
     Container-->PhysicalPartition3;
