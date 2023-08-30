@@ -72,7 +72,7 @@
     az acr credential show --name $acrName
     ```
 
--- Deploy Container
+- Deploy Container
     ```
     az container create \
         --resource-group $resourceGroup
