@@ -128,7 +128,187 @@
     | Can lower and raise as needed       | From max to 10% below                  | Pay only for the RUs that you use  |
     | Better for predictable workload     | better for un predicatable workload    | Better for spiky workloads         |
 
+
+- Provisioning Container Throughput
+    - **Reserve request units per second (RU/s)** - How many request units are available for the application
+    - **Exceeding reserved throughput limits** - Requests are *throttled* (HTTP 429)
+        - x-ms-retry-after-ms (response header)
+
+- Provisioning Database Throughput
+    - Distribute the throughput across the containers
+    - **Migrating existing applications** - May already be designed with separate containers per type
+    - **Differentiate solely on Partition key** - Containers share throughput needs, but different partitioning requirements
+    - **Mix and Match** - Distribute database throughput across some containers. Provision other containers individually
+
+- Whiteboarding the Cost
+    - Baseline
+        | Read item | SQL Query | Write item |
+        | --------- | --------- | ---------- |
+        | RU        |  ~2.8 RUs | ~ 10 RUs   |
+
+    - [Capacity Calculator](https://cosmos.azure.com/capacitycalculator)
+
+    - Pricing
+        - Storage 
+            - Consumption-based SSD storage - $0.25 for 1 GB per month per region
+        - Provisioned throughput 
+            - Manual provisioned throughput - $0.008/hr for 100 RU/sec per region
+            - Autoscale provisioned throughput - $0.012/hr for 100 RU/sec per region
+        - Serverless
+            - Consumption-based per request - $0.25 per 1 million RUs
+        - More options
+            - Reserved capacity, multi-master, analystic storage
+
+### Horizontal Partitioning
+- Achieving Elastic Scale
+    - **What is Partioning?** - Massive scale-out within a container
+    - **Containers** - Single logical resource composed of multiple pysical partitions
+    - **Partitions** - Physical fixed-capacity data buckets
+    - **Automated Scale-Out** - Cosmos DB transparently splits partitions to manage growth
+
+```mermaid
+    Container-->PhysicalPartition1;
+    Container-->PhysicalPartition2;
+    Container-->PhysicalPartition3;
+    Container-->PhysicalPartition4;
+```
+
+- Understanding Logical Partitions
+    - Partition key - defines the logical partition key
+    - Every document has a maximum size of 2 MB
+    - Every logical partition size has maximum of 20 GB
+
+- Partition Splits
+    - Cosomos DB maintains the physical partition,
+    - It decides which physical partition every logical partition going to be hosted on.
+    - Partition splits happen instantaneous
+
+- Avoiding Hot Partitions
+    - Avoid selecting partition key where some are large partitions and other are small partitions
+    - Select uniform distribution of logical partitions
+
+- Cross-partition Queries
+    - querying across all the partitions
+
+- Choosing the Right Partition Key
+    - Based on common usage patterns - The right choice will deliver massive scale
+    - Avoid performance bottlenecks - Ensure uniform distribution of both storage and throughput
+    - Boundary for queries and transactions - Minimize cross-partition queries, stored procecures with ACID guarantees
+
+- Common Partitioning Patterns
+    - /id  - single-documents
+        - each document in logical partition ==> good for high write intensive scenario
     
+    - /type - small lookup list
+    - Other - Optimize for queries
+
+- Changing the Partition Key
+    - Partition keys are immutable 
+        - Can't change for the container
+        - Can't change for the document
+    - Always use the same property path
+        - For example: /pk , store a copy of the desired partition key
+    - Always uniquely qualify the id property
+        - can be a GUID, but doesn't have to be
+
+- Partition Granularity
+    - Synthetic Partition Keys
+        - Iot: Device ID
+        - Multitenant: Tenant ID
+        - Device ID + Month
+        - Tenant ID + User ID
+    
+    - Hierarchical Partition Keys
+        - Aka "subpartitioning" upto 3 levels
+        - Leaf level limit = 20 GB
+        - Parent level limit > 20 GB
+    
+- Hierarchical Partition Keys
+    - Synthetic partition key : Tenant ID + User ID
+    - SELECT * FROM c WHERE c.tenantId = 'TenantX' <-- Cross-partition query
+    - Hierarchical partition key: Tenant ID / User ID
+        - SELECT * FROM c WHERE c.tenantId = 'TenantX' <-- Sub-partition query
+        - SELECT * FROM c WHERE c.tenantId = 'TenantX' <-- Single-partition query
+
+### Global Distribution
+- Replication
+    - Performance
+    - Business continuity
+        - Replica failover within a region
+
+- Enabling Global Distribution
+    - Associate multiple regions with your Cosmos DB account
+        - Limited to geo-fencing policies
+    - Dynamically add and remove regions
+        - Associate (and disassociate regions) with the click of a mouse
+    - Multi-master
+        - Enable writes across all regions, with automatic failover
+
+- Global Distribution
+    - Replicate data globally
+    - Enable Mult-region writes
+    ```csharp
+        var options = new CosmosClientOptions
+        {
+            ApplicationRegion = "West US"
+        };
+    ```
+    - Doesn't impact the throuput, but greatly effects the latency
+    - Rights charges will increase - increased RU
+
+- Mult-master Conflict Resolution
+    - Every region is enabled for writes, inviting conflicts
+    - There options for conflict resolution
+        - **Last writer winds** - Based on highest timestamp value in _ts
+            - Data Explorer - Scale and Settings
+        - **Custom procedure** - Based on stored procedure result
+        - **Conflices feed** - review the conflicts in data explorer
+
+- Replication and Consistency
+    - Replication within a region
+        - Multiple replicas invite "dirty reads"
+        - Extremely rare, since replicas are updated extermely fast
+    
+    - Global replication
+        - It takes hundreds of milliseconds to move data across continents
+        - Much more common to experience dirty reads
+
+- Consistency Levels
+    - Strong
+    - Bounded Staleness
+    - Session
+    - Consistent Prefix
+    - Eventual
+
+| Strong | Bounded Staleness | Session | Consistent Prefix | Eventual |
+| ------ | ----------------- | ------- | ----------------- | -------- |
+| <ul> <li> No dirty reads </li> <li> Highest write latency </li> <li> Consistent reads at low latency </li> <li> Reads from quorum </li> <li> Can combine with global | Dirty reads possible </li> <li> Configurable staleness </li> <li> Bounded by time and updates </li> <li> Reads from quorum </li> </ul> |  <ul> <li> Default level </li> <li> No dirty reads for writers (reads your own data) </li> <li> Dirty reads possible for other users </li> <li> Usually reads from single replica </li> <ul> | <ul> <li> Reads from single replica </li> <li> Dirty reads possible </li> <li> Quorum is already updated </li> <li> Reads never see out-of-order writes </li> </ul> | <ul> <li> No guarantees </li> <li> Lowest write latency </li> <li> Best performance </li> <li> Reads from single replica </li> <li> Dirty reads possible in any order </li> </ul> |
+
+- Setting the consistency Level
+    - Set defautl for entire account
+    - Override at the request level - any request can weaken the default consistency level
+    ```csharp
+        new ItemRequestOptions 
+        { 
+            ConsistencyLevel = ConsistencyLevel.Session
+        }
+    ```
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+
 
 
 
