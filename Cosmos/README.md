@@ -351,19 +351,19 @@ graph TD;
         - Eanble Time to Live at container level
 
 ## Querying Query with SQL
-    - Cosmos DB SQL
-        - Special version of SQL designed for JSON
-        - Works with documents and JSON data types
+- Cosmos DB SQL
+    - Special version of SQL designed for JSON
+    - Works with documents and JSON data types
 
-    - Familiar keywords
-        - SELECT, FROM, WHERE, JOIN, IN, BETWEEN, ORDER BY
+- Familiar keywords
+    - SELECT, FROM, WHERE, JOIN, IN, BETWEEN, ORDER BY
     
-    - Work with JSON
-        - Descend into any subsection of a document
-        - Iterate nested arrays for intra-document join
-        - Return documents as-is, or as custom shape
+- Work with JSON
+    - Descend into any subsection of a document
+    - Iterate nested arrays for intra-document join
+    - Return documents as-is, or as custom shape
 
-    - Example
+- Example
     ```sql
         SELECT ch.name, ch.birthdate
         FROM Families AS f
@@ -371,12 +371,11 @@ graph TD;
         WHERE f.address.state = 'CA'
     ```
 
-    - Common operators
-        - String ->  || (concatenate)
-        - Ternary & coalesce -> ? : ??
+- Common operators
+    - String ->  || (concatenate)
+    - Ternary & coalesce -> ? : ??
     
-    - Build - in functions
-
+- Build - in functions
     - Simple Query
     ```sql
         SELECT * FROM c  /* Get all the documents from the container */
