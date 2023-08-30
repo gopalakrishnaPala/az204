@@ -295,6 +295,100 @@ graph TD;
         }
     ```
 
+## Data Modeling and Migration
+- Document database
+    - JSON documents
+        - Non-relational
+        - No Joins
+        - No relational constraints
+    
+    - Paradigm shift
+        - Need to use different techniques to implement relations between entities
+    
+    - New approach
+        - Most intutions and best practices don't translate well in the NoSQL world
+
+- Relational vs. Document
+| Relational Database    | Document database |
+| ---------------------- | ----------------- |
+| Rows                   | Documents         |
+| Columns                | Properties        |
+| Strongly types schemas | No defined schema |
+
+- Denormalizing the Model
+
+- Data Migration Options
+    - Data Migration Tool
+        - Open source desktop application, suitable for small-to-medium datasets
+    
+    - Azure Data Factory
+        - ETL service for data integration, suitable for medium-to-large datasets
+
+    - Spark Connector
+        - Big data analytics using Apache Spark
+    
+    - Custom Tool
+        - Support extremely large (100 TB+) datasets
+    
+    - Online migrations
+        - Change feed
+        - Striim
+    
+    - Stream Analytics
+        - Aggregate, analyze, and transform fast streaming data
+    
+    - Apache Kafka Connector
+        - Import and export Kafka topics
+
+- Special Document Properties
+    - id - User-defined unique ID
+    - _rid - Resource Id
+    - _self - Full path to document
+    - _etag - Binary value, that changes when the resource changes
+    - _attachments - URI suffix to the attachments
+    - _ts - Last updated timestamp (epoch)
+    - ttl - expiration in seconds
+        - Eanble Time to Live at container level
+
+## Querying Query with SQL
+    - Cosmos DB SQL
+        - Special version of SQL designed for JSON
+        - Works with documents and JSON data types
+
+    - Familiar keywords
+        - SELECT, FROM, WHERE, JOIN, IN, BETWEEN, ORDER BY
+    
+    - Work with JSON
+        - Descend into any subsection of a document
+        - Iterate nested arrays for intra-document join
+        - Return documents as-is, or as custom shape
+
+    - Example
+    ```sql
+        SELECT ch.name, ch.birthdate
+        FROM Families AS f
+        JOIN ch IN f.children
+        WHERE f.address.state = 'CA'
+    ```
+
+    - Common operators
+        - String ->  || (concatenate)
+        - Ternary & coalesce -> ? : ??
+    
+    - Build - in functions
+
+    - Simple Query
+    ```sql
+        SELECT * FROM c  /* Get all the documents from the container */
+    ```
+
+    
+
+
+
+
+
+
 
 
 
