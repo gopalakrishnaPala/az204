@@ -46,3 +46,32 @@
         T2(Task 2) --> F3(Function 3)
     ```
 
+    - **Async HTTP APIs**- address the problem of coordinating state of long-running operations with external clients.
+
+    - **Monitor** - implements a recurring process in a workflow, possibly looking for a change in state.
+
+    - **Human interaction** - This pattern combines automated processes that also involve some human interaction.
+
+- Comparision with Logic Apps
+
+## Design a workflow based on Durable Functions
+
+- Example
+    ```mermaid
+    graph TD;
+        F1 (Request Approval) --> T1 (Approval Task)
+        T1 --> F2 (Process Approval)
+        T1 --> F3 (Escalalte)    
+    ```
+
+| Workflow function | Durable Function Type |
+| ----------------- | --------------------- |
+| Submitting a project design proposal for approval | Client Function |
+| Assign an Approval task to relevant member of staff | Orchestration Function |
+| Approval task | Activity Function |
+| Escalation task | Activity Function |
+
+
+
+
+
