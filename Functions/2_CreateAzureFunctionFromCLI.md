@@ -1,48 +1,34 @@
-- Set the Parameters for creating Azure Function App
+# Create Azure Function App using Azure CLI
 
-> {% note %} To list all the <mark>azure locations use</mark>. {% endnote %}
+### Set the Parameters for creating Azure Function App
+```
+RESOURCE_GROUP='rg-gp-az204'
+LOCATION='southindia'
+FUNCATION_APP='func-gp-az204'
+STORAGE='stgpaz204'
+```
 
-    ```
-    az account list-locations --output table
-    ```
+### Create Resource Group
+```
+az group create --name $RESOURCE_GROUP --location $LOCATION
+```
     
-    ```
-    resourceGroup='rg-gp-az204'
-    location='southindia'
-    functionApp='func-gp-az204'
-    functionsVersion='4'
-    storage='stgpaz204'
-    storageSku='Standard_LRS'
-    runtime='dotnet-isolated'
-    runtimeVersion='6'
-    ```
+### Create a storage account associated with Function Appp
+```
+az storage account create --name $STORAGE --resource-group $RESOURCE_GROUP --location $LOCATION --sku Standard_LRS
+```
 
-- Create Resource Group
-    ```
-    az group create --name $resourceGroup --location $location
-    ```
+### Create Azure Function App
+```
+az functionapp create --name $FUNCATION_APP --resource-group $RESOURCE_GROUP --consumption-plan-location $LOCATION --storage-account $STORAGE --functions-version 4 --runtime dotnet-isolated --runtime-version 6
+```
 
-- Create a storage account associated with Function Appp
-    ```
-    az storage account create --name $storage --resource-group $resourceGroup --location $location --sku $storageSku
-    ```
+### Verify the created Function App
+```
+az functionapp list --output table
+```
 
-- Create Azure Function App
-
-     *<u>Help</u>*To list all the azure locations use
-    ```
-    az functionapp list-runtimes
-    ```
-    
-    ```
-    az functionapp create --name $functionAppName --resource-group $resourceGroup --consumption-plan-location $location --storage-account $storage --functions-version $functionsVersion --runtime $runtime --runtime-version $runtimeVersion
-    ```
-- Verify the created Function App
-    ```
-    az functionapp list
-    ```
-
-- Delete the resouce group
-    ```
-    az group delete --name $resourceGroupName
-    ```
+### Delete the resouce group
+```
+az group delete --name $RESOURCE_GROUP
+```
