@@ -2,25 +2,25 @@
 
 ## Set the Parameters for creating Azure Function App
 ```
-RESOURCE_GROUP='rg-gp-az204'
-LOCATION='southindia'
-FUNCATION_APP='func-gp-az204'
-STORAGE='stgpaz204'
+resourceGroup='rg-gp-az204'
+location='southindia'
+functionApp='func-gp-az204'
+storageAccount='stgpaz204'
 ```
 
 ## Create Resource Group
 ```azurecli
-az group create --name $RESOURCE_GROUP --location $LOCATION
+az group create --name $resourceGroup --location $location
 ```
     
 ## Create a storage account associated with Function Appp
 ```azurecli
-az storage account create --name $STORAGE --resource-group $RESOURCE_GROUP --location $LOCATION --sku Standard_LRS
+az storage account create --name $storageAccount --resource-group $resourceGroup --location $location --sku Standard_LRS
 ```
 
 ## Create Azure Function App
 ```azurecli
-az functionapp create --name $FUNCATION_APP --resource-group $RESOURCE_GROUP --consumption-plan-location $LOCATION --storage-account $STORAGE --functions-version 4 --runtime dotnet-isolated --runtime-version 6
+az functionapp create --name $functionApp --resource-group $resourceGroup --consumption-plan-location $location --storage-account $storageAccount --functions-version 4 --runtime dotnet-isolated --runtime-version 6
 ```
 
 ## Verify the created Function App
@@ -29,6 +29,6 @@ az functionapp list --output table
 ```
 
 ## Delete the resouce group
-```
-az group delete --name $RESOURCE_GROUP
+```azurecli
+az group delete --name $resourceGroup
 ```
