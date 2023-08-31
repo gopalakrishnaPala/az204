@@ -32,3 +32,17 @@
         T2(Task 2) --> F3(Function 3)
     ```
 
+    - **Fan out/fan in** - runs multiple functions in parallel and waits all the functions to finish.
+
+    ```mermaid
+    graph TD;
+        F1(Function 1) --> T1(Task 1)
+        T1(Task 1) --> F2(Function 2)
+        T1(Task 1) --> F3(Function 3)
+        T1(Task 1) --> F4(Function 4)
+        F2(Function 2) --> T2(Task 2)
+        F3(Function 2) --> T2(Task 2)
+        F4(Function 2) --> T2(Task 2)
+        T2(Task 2) --> F3(Function 3)
+    ```
+
