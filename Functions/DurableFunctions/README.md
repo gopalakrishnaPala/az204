@@ -59,9 +59,9 @@
 - Example
     ```mermaid
     graph TD;
-        F1 (Request Approval) --> T1 (Approval Task)
-        T1 --> F2 (Process Approval)
-        T1 --> F3 (Escalalte)    
+        F1(Request Approval) --> T1(Approval Task)
+        T1(Approval Task) --> F2(Process Approval)
+        T1(Approval Task) --> F3(Escalalte)    
     ```
 
 | Workflow function | Durable Function Type |
