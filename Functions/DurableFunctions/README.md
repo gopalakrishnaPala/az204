@@ -61,15 +61,17 @@
     graph TD;
         F1(Request Approval) --> T1(Approval Task)
         T1(Approval Task) --> F2(Process Approval)
-        T1(Approval Task) --> F3(Escalalte)    
+        T1(Approval Task) --> F3(Escalate)    
     ```
 
-| Workflow function | Durable Function Type |
-| ----------------- | --------------------- |
-| Submitting a project design proposal for approval | Client Function |
-| Assign an Approval task to relevant member of staff | Orchestration Function |
-| Approval task | Activity Function |
-| Escalation task | Activity Function |
+    | Workflow function | Durable Function Type |
+    | ----------------- | --------------------- |
+    | Submitting a project design proposal for approval | Client Function |
+    | Assign an Approval task to relevant member of staff | Orchestration Function |
+    | Approval task | Activity Function |
+    | Escalation task | Activity Function |
+
+## Create a workflow using Durable Functions
 
 
 
