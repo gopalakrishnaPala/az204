@@ -1,5 +1,7 @@
 # Create Azure Function App using Azure CLI
 
+> 🌟 [Azure Account Help Commans]() 🌟 
+
 ## Set the Parameters for creating Azure Function App
 ```
 resourceGroup='rg-gp-az204'
