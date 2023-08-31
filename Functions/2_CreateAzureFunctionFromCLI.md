@@ -9,7 +9,7 @@ storageAccount='stgpaz204'
 ```
 
 > For getting the available azure locations and other account help commands
-> 🌟 [Azure Account Help Commans]() 🌟 
+> 🌟 [Azure Account Help Commands]() 🌟 
 
 ## Create Resource Group
 ```azurecli
