@@ -1,5 +1,6 @@
 # Exam AZ-204: Developing Solutions for Microsoft Azure
-### [For More Details refer to Microsoft Certification Page](https://learn.microsoft.com/en-us/certifications/exams/az-204/)
+ 
+> 🌟 [For More Details refer to Microsoft Certification Page](https://learn.microsoft.com/en-us/certifications/exams/az-204/) 🌟 
 
 ## Skills Measured
 - Develop Azure compute solutions (25–30%)
