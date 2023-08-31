@@ -1,5 +1,6 @@
 # Exam AZ-204: Developing Solutions for Microsoft Azure
-> 🌟 [For More Details refer to Microsoft Certification Page](https://learn.microsoft.com/en-us/certifications/exams/az-204/) 🌟 
+> 🌟 [For more details refer to Microsoft Certification Page](https://learn.microsoft.com/en-us/certifications/exams/az-204/) 🌟 
+
 
 ## Skills Measured
 - Develop Azure compute solutions (25–30%)
@@ -7,6 +8,8 @@
 - Implement Azure security (20–25%)
 - Monitor, troubleshoot, and optimize Azure solutions (15–20%)
 - Connect to and consume Azure services and third-party services (15–20%)
+
+> 🌟 [For details on skills measuere](./AZ-204_StudyGuide_ENU_FY23Q3_v2.pdf) 🌟 
 
 ## [Develop Azure compute solutions (25–30%)](compute/README.md)
 - [Implement containerized solutions](compute/Containers/README.md)
