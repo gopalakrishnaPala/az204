@@ -1,6 +1,6 @@
 - Set the Parameters for creating Azure Function App
 
-    *<u>Help</u>*To list all the azure locations use
+    **<u>Help</u>** To list all the azure locations use
     ```
     az account list-locations --output table
     ```
