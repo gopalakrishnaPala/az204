@@ -1,6 +1,7 @@
 - Set the Parameters for creating Azure Function App
 
     **Help** To list all the ==azure locations use==.
+    ___
     ```
     az account list-locations --output table
     ```
