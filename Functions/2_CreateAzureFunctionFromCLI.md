@@ -2,6 +2,7 @@
 
     **Help** To list all the ==azure locations use==.
     ___
+    ---
     ```
     az account list-locations --output table
     ```
