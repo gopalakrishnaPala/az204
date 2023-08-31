@@ -11,8 +11,8 @@
 
 > 🌟 [For details on skills measuere](./AZ-204_StudyGuide_ENU_FY23Q3_v2.pdf) 🌟 
 
-## [Develop Azure compute solutions (25–30%)](compute/README.md)
-- [Implement containerized solutions](compute/Containers/README.md)
+## [Develop Azure compute solutions (25–30%)](Compute/README.md)
+- [Implement containerized solutions](Compute/Containers/README.md)
     - [Create and manage container images for solutions]()
     - [Publish an image to Azure Container Registry]()
     - [Run containers by using Azure Container Instance]()
