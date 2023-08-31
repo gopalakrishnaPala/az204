@@ -43,7 +43,7 @@
         F2(Function 2) --> T2(Task 2)
         F3(Function 2) --> T2(Task 2)
         F4(Function 2) --> T2(Task 2)
-        T2(Task 2) --> F3(Function 3)
+        T2(Task 2) --> F5(Function 5)
     ```
 
     - **Async HTTP APIs**- address the problem of coordinating state of long-running operations with external clients.
