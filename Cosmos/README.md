@@ -365,10 +365,10 @@ graph TD;
 
 - Example
     ```sql
-        SELECT ch.name, ch.birthdate
-        FROM Families AS f
-        JOIN ch IN f.children
-        WHERE f.address.state = 'CA'
+    SELECT ch.name, ch.birthdate
+    FROM Families AS f
+    JOIN ch IN f.children
+    WHERE f.address.state = 'CA'
     ```
 
 - Common operators
@@ -377,9 +377,92 @@ graph TD;
     
 - Build - in functions
     - Simple Query
-    ```sql
+        ```sql
         SELECT * FROM c  /* Get all the documents from the container */
+
+        -- If using specific properties instead of *, then it will e a projection
+        ```
+- Scalar Expression Queries
+    ```sql
+    SELECT "Hello"
+    SELECT "Hello" as Word
+    SELECT VALUE "Hello"
+
+    SELECT GETCURRENTDATETIME()
+    SELECT GETTIMESTAMP()
     ```
+
+    ```json
+    [
+        {
+            "$1": "Hello"
+        }
+    ]
+    ```
+
+- Querying a Container
+
+    ```sql
+    SELECT * FROM c
+    SELECT c.location.city, c.location.state
+    FROM c      -- Just an alias for the container
+    ```
+
+    ```sql
+    SELECT * FROM c.children    -- just the children propery
+    ```
+
+    ```sql
+    -- FROM with IN
+    -- Use IN to break each item into multiple documents on a child array
+    SELECT * FROM ch IN c.children
+    ```
+
+- Intra-document Joins
+    ```sql
+    -- Use Join to perform an "intra-document" join between a parent object and child array
+    -- This works similar to IN, but also keeps parent properties in scope similar to an INNER JOIN in regular SQL.
+    ```
+
+- Projections
+    ```sql
+    SELECT
+        c.address.courntry AS Country,
+        {
+            "storename": c.name,
+            "cityStateZip": [
+                c.address.location.city,
+                c.address.location.stateProvinceName
+            ]
+        }
+    FROM c
+    ```
+- Range Queries
+    ```sql
+    WHERE c.name BETWEEN 'A' AND 'K'
+    ORDER BY c.name
+
+    TOP 10
+    OFFSET 10 LIMIT 10;
+    ```
+
+- Subset filtering
+    ```sql
+
+    ```
+
+- Calculated Properties
+- Aggregation queries
+- 
+
+    
+    ```
+
+
+
+
+
+
 
     
 
