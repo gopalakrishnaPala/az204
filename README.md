@@ -9,7 +9,7 @@
 - Monitor, troubleshoot, and optimize Azure solutions (15–20%)
 - Connect to and consume Azure services and third-party services (15–20%)
 
-> 🌟 [For details on skills measuere](./AZ-204_StudyGuide_ENU_FY23Q3_v2.pdf) 🌟 
+> 🌟 [For details on skills measuere](AZ-204_StudyGuide_ENU_FY23Q3_v2.pdf) 🌟 
 
 ## [Develop Azure compute solutions (25–30%)](Compute/README.md)
 - [Implement containerized solutions](Compute/Containers/README.md)

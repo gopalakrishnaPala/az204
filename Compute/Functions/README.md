@@ -203,11 +203,9 @@ Example:
 - [Using Azure CLI](CreateAzureFunctionFromCLI.md)
 - [Using Powershell](CreateAzureFunctionFromPowershell.md)
 
-### Create a Azure Timer Triggered Function
+### Create a Azure Function locally
 - [Using Functions Core Tools]()
 - [Develop Azure Functions using Visual Studio](https://learn.microsoft.com/en-us/training/modules/develop-test-deploy-azure-functions-with-visual-studio/3-exercise-develop-and-test-azure-functions-locally)
-- []
-- [Using Visual Studio Code]()
 
 
 

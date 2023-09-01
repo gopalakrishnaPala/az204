@@ -1,5 +1,8 @@
 # Create Azure Function App using Azure CLI
 
+> For getting the available azure locations and other account help commands
+> 🌟 [Azure Account Help Commands]() 🌟 
+
 ## Set the Parameters for creating Azure Function App
 ```
 resourceGroup='rg-gp-az204'
@@ -7,9 +10,6 @@ location='southindia'
 functionApp='func-gp-az204'
 storageAccount='stgpaz204'
 ```
-
-> For getting the available azure locations and other account help commands
-> 🌟 [Azure Account Help Commands]() 🌟 
 
 ## Create Resource Group
 ```azurecli

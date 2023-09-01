@@ -134,4 +134,5 @@ private static string GetEnvironmentVariable(string name)
 ```
 
 ### Binding at runtime
+- We can use IBinder to bind the bindings at run-time, instead of design time.
 
