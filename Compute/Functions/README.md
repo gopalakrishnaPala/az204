@@ -17,11 +17,11 @@
 - Like Azure Functions, Azure WebJobs with the WebJobs SDK is a code-first integration service.
 - Both are built on Top of Azure Service Plan.
 - Azure Functions are built on the WebJobs SDK.
-|         | Functions | WbJobs with WebJobs SDK |
-| ------- | --------- | ----------------------- |
-| Serverless app model with automatic scaling | Yes | No |
-| Pay-per-use pricing | Yes | No |
-| Integration with Logic Apps | Yes | No |
+    |         | Functions | WbJobs with WebJobs SDK |
+    | ------- | --------- | ----------------------- |
+    | Serverless app model with automatic scaling | Yes | No |
+    | Pay-per-use pricing | Yes | No |
+    | Integration with Logic Apps | Yes | No |
 
 ## Azure Functions hosting options
 - **Hosting Plans**
@@ -34,11 +34,11 @@
         - **Kubernetes(Direct or Azure Arc)** - fully isolated and dedicated environment running on top of kubernetes platform.
 
 - **Function App timeout duration** (in mins)
-| Plan | Default | Maximum |
-| ---- | ------- | ------- |
-| Consumption plan | 5 | 10 |
-| Premium plan | 302 | Unlimited |
-| Dedicated plan | 302 | Unlimited |
+    | Plan | Default | Maximum |
+    | ---- | ------- | ------- |
+    | Consumption plan | 5 | 10 |
+    | Premium plan | 302 | Unlimited |
+    | Dedicated plan | 302 | Unlimited |
 
 ## Storage account requirements
 - On any plan, a function app requires Azure Storage account, which supports Azure Blob, Queue, Files and Table storage.
