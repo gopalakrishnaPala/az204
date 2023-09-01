@@ -18,6 +18,7 @@
 > | storage | account | create | name |
 
 🌟 ***Command Groups*** 🌟
+
 | command | Description |
 | ----- | ----------------------- |
 | az vm | Manage Virtual Machines |
@@ -33,7 +34,7 @@
 | az eventgrid | Manage Event grids |
 | az cosmosdb | Manage Cosmos db |
 
-[Commands Reference](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
+For complete commands list - [Commands Reference](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 
 🌟 ***Common commands*** 🌟
 | Command | Description | Example |
