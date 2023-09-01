@@ -7,7 +7,6 @@
 
 ## Introduction
 - Azure Functions is a serverless, event-driven compute service that is fully scalable, resilient, reliable, and secure.
-- Azure Functions provide event-driven and scalable serverless compute for Azure
 - Azure Functions support 
     - **Triggers** - ways to start execution of function
     - **Bindings** - ways to simplify coding for input and output
@@ -204,7 +203,6 @@ Example:
 - [Using Powershell](CreateAzureFunctionFromPowershell.md)
 
 ### Create a Azure Function locally
-- [Using Functions Core Tools]()
 - [Develop Azure Functions using Visual Studio](https://learn.microsoft.com/en-us/training/modules/develop-test-deploy-azure-functions-with-visual-studio/3-exercise-develop-and-test-azure-functions-locally)
 
 
