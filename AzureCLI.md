@@ -18,6 +18,7 @@
 > | storage | account | create | name |
 
 🌟 ***Command Groups*** 🌟
+| command | Description |
 | ----- | ----------------------- |
 | az vm | Manage Virtual Machines |
 | az functionapp | Manage Function apps |
