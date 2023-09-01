@@ -144,8 +144,8 @@ Function contains two important pieces
     ]
 }
 ```
-    - `name` property identifies the function parameter
-    - `$return` using the function return value
+- `name` property identifies the function parameter
+- `$return` using the function return value
 
 ### Connect functions to Azure services
 Default configuration provider uses environment variable that are set in Application Settings when running in the Azure Function Service, or from the local settings file when developing locally.
