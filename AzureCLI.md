@@ -36,14 +36,14 @@
 
 For complete commands list - [Commands Reference](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 
-🌟 ***Common commands*** 🌟
+🌟 ***Commands*** 🌟
 | Command | Description | Example |
 | ------- | ----------- | ------- |
 | create  | create a resource | `az storage account create --name  myStorageAccount` |
 | update  | update a resource | `az storage update create --sku Standard_LRS`
 | list    | list resources | `az functionapp list` |
 
-🌟 ***Common parameters*** 🌟
+🌟 ***Parameters*** 🌟
 | Parameter | Description |
 | --------- | ----------- |
 | resource-group | Resource group associated with the resource |
@@ -64,6 +64,8 @@ use --output (--out or -o) parameter to format CLI output
 | none | No output other than errors and warnings |
 
 For detailed output Formates refer [Output formats for Azure CLI commands](https://learn.microsoft.com/en-us/cli/azure/format-output-azure-cli)
+
+🌟 ***Query command outputs*** 🌟
 
 ## Login 
 ```
