@@ -78,7 +78,7 @@ Azure Functions uses an event-based architecture.
 - Azure Functions are serverless compute service.
 - Azure Logic Apps are serverless workflow integration service.
 
-### Develop Azure Functions
+## Develop Azure Functions
 Function contains two important pieces
 - Code
 - function.json File  
@@ -100,18 +100,18 @@ Function contains two important pieces
         ]
     }
     ```
-## Function app
+### Function app
 - Provides an execution context in Azure in which functions run.
 - It's the unit of deployment and management for functions.
 - Contains one or more functions that are managed, deployed, and scaled together.
 
-## Folder structure
+### Folder structure
 - Code for all the functions in a specific function app is located in a root project that contains a host configuration file (host.json). 
 - Host.json file contains runtime-specific configurations and is the root folder of the function app.
 - C# Compiles folder structure
     [Detailed .NET C# Functions](./FunctionCsharpDetailed.md)
 
-## Creating triggers and bindings
+### Creating triggers and bindings
 - Triggers
 - Binding
 
@@ -144,8 +144,8 @@ Function contains two important pieces
     ]
 }
 ```
-- `name` property identifies the function parameter
-' `$return` using the function return value
+    - `name` property identifies the function parameter
+    - `$return` using the function return value
 
 ## Connect functions to Azure services
 Default configuration provider uses environment variable that are set in Application Settings when running in the Azure Function Service, or from the local settings file when developing locally.
@@ -154,7 +154,7 @@ Default configuration provider uses environment variable that are set in Applica
 - When hosted in Azure Functions service, identity-based connections use a managed identity.
 
 ### Grant permission to the identity
-
+- use RBAC to assign permission to function app identity
 
 
 
