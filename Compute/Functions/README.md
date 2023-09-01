@@ -197,8 +197,8 @@ Example:
     - When both combined together - it means every values 0-59, select fifth value - "every five minutes"
 
 ## Create a time trigger 
-- [Create function in portal] (CreateAzureFunctionInPortal.md)
-- [Create function in CLI] (CreateAzureFunctionFromCLI.md)
+- [Create function in portal](CreateAzureFunctionInPortal.md)
+- [Create function in CLI](CreateAzureFunctionFromCLI.md)
 
 
 
