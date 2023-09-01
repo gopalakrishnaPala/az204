@@ -18,8 +18,7 @@
 > | storage | account | create | name |
 
 🌟 ***Command Groups*** 🌟
-[Commands Reference] (https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
-
+| ----- | ----------------------- |
 | az vm | Manage Virtual Machines |
 | az functionapp | Manage Function apps |
 | az acr | Manage Azure Container Registries |
@@ -33,9 +32,9 @@
 | az eventgrid | Manage Event grids |
 | az cosmosdb | Manage Cosmos db |
 
+[Commands Reference](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 
 🌟 ***Common commands*** 🌟
-
 | Command | Description | Example |
 | ------- | ----------- | ------- |
 | create  | create a resource | `az storage account create --name  myStorageAccount` |
