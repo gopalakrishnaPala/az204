@@ -1,4 +1,4 @@
-# Azure Compute Solutions
+# Develop Azure Compute Solutions
 - [Implement containerized solutions](Compute/Containers/README.md)
     - [Create and manage container images for solutions]()
     - [Publish an image to Azure Container Registry]()
