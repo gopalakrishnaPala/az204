@@ -1,7 +1,6 @@
 # Create Azure Function App using Azure CLI
 
-> For getting the available azure locations and other account help commands
-> 🌟 [Azure Account Help Commands]() 🌟 
+> More Details on Azure CLI refer 🌟 [Azure CLI]() 🌟 
 
 ## Set the Parameters for creating Azure Function App
 ```
