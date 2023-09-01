@@ -197,8 +197,18 @@ Example:
     - When both combined together - it means every values 0-59, select fifth value - "every five minutes"
 
 ## Create a time trigger 
-- [Create function in portal](CreateAzureFunctionInPortal.md)
-- [Create function in CLI](CreateAzureFunctionFromCLI.md)
+### Create a Azure Function App
+- [Using Azure portal](CreateAzureFunctionInPortal.md)
+- [Using Azure CLI](CreateAzureFunctionFromCLI.md)
+- [Using Powershell](CreateAzureFunctionFromPowershell.md)
+
+### Create a Azure Timer Triggered Function and Deploy to Azure Function App
+- [Using Functions Core Tools]()
+- [Using Visual Studio]()
+- [Using Visual Studio Code]()
+
+
+
 
 
 
