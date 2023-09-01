@@ -19,7 +19,7 @@
 
 🌟 ***Command Groups*** 🌟
 
-| command | Description |
+| Command | Description |
 | ----- | ----------------------- |
 | az vm | Manage Virtual Machines |
 | az functionapp | Manage Function apps |
@@ -50,7 +50,20 @@ For complete commands list - [Commands Reference](https://learn.microsoft.com/en
 | location | location of the resource |
 | name | name of the resource |
 
+🌟 ***Command output format*** 🌟
+use --output (--out or -o) parameter to format CLI output
 
+| --output | Description |
+| -------- | ----------- |
+| json	| JSON string. This setting is the default |
+| jsonc | Colorized JSON |
+| yaml | YAML, a human-readable alternative to JSON |
+| yamlc | Colorized YAML |
+| table | ASCII table with keys as column headings |
+| tsv | Tab-separated values, with no keys |
+| none | No output other than errors and warnings |
+
+For detailed output Formates refer [Output formats for Azure CLI commands](https://learn.microsoft.com/en-us/cli/azure/format-output-azure-cli)
 
 ## Login 
 ```
