@@ -16,7 +16,7 @@
 - It's the unit of deployment and management for functions.
 - Contains one or more functions that are managed, deployed, and scaled together.
 
-### Azure Functions Components
+### Components
 | Component | Description |
 | --------- | ----------- |
 | Function trigger | what causes a function to run. |
@@ -26,7 +26,7 @@
 | Deployment slots | allow function app to run different instances. Slots are different environments exposed via a publicly available endpoint. way to swap new version into production |
 | Function app configuration | Connection strings, environment variables, and other application settings. Function app settings values can be read in teh code as environment variables. |
 
-### Azure Functions hosting options
+### Hosting options
 - **Hosting Plans**
     - **Consumption Plan** - Scales automatically and you only pay for compute sources when functions are running. This is a default hosting plan.
     - **Premium Plan** - Automatically scales based on pre-warmed workers, which run applications with no delay after being idle.
@@ -59,12 +59,12 @@ Azure Functions uses an event-based architecture.
 - On any plan, a function app requires Azure Storage account, which supports Azure Blob, Queue, Files and Table storage.
 - Rely's on storage for operations such as managing triggers and logging function executions.
 
+### Azure Functions monitoring
+- Built-in integration with Azure Application Insights to monitor functions.
+  
 ### Scale Azure Functions
 - Unit of scale for Azure Functions is the function app.
 - In Consumption and Premium plans, Azure Functions auto scales CPU and memory resources by adding more instances of the Function host.
-
-### Azure Functions monitoring
-- Built-in integration with Azure Application Insights to monitor functions.
 
 ## Compare with Other Azure Services
 ### Compare Azure Functions with Web Jobs
@@ -109,14 +109,9 @@ Function contains two important pieces
 - Code for all the functions in a specific function app is located in a root project that contains a host configuration file (host.json). 
 - Host.json file contains runtime-specific configurations and is the root folder of the function app.
 - C# Compiles folder structure
-    [Detailed .NET C# Functions](./FunctionCsharpDetailed.md)
-
-### Creating triggers and bindings
-- Triggers
-- Binding
-
-### Trigger and binding definitions
-- **C# class library** - decorating methods and parameters with C# attributes
+      - Trigger and binding definitions
+          - **C# class library** - decorating methods and parameters with C# attributes
+      - [Detailed .NET C# Functions](./FunctionCsharpDetailed.md)
 
 ### Binding direction
 - For triggers, the direction in always `in`
@@ -144,8 +139,6 @@ Function contains two important pieces
     ]
 }
 ```
-- `name` property identifies the function parameter
-- `$return` using the function return value
 
 ### Connect functions to Azure services
 Default configuration provider uses environment variable that are set in Application Settings when running in the Azure Function Service, or from the local settings file when developing locally.
