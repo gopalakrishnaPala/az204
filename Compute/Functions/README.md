@@ -1,15 +1,11 @@
 # Azure Functions
 
 ### Table of Contents  
-[Introduction](#introduction)  
-[Scale Azure Functions](#scale-azure-functions)  
-[Compare with Other Azure Services](#compare-with-other-azure-services) 
-[Develop Azure Functions](#develop-azure-functions) 
+- [Introduction](#introduction)  
+- [Scale Azure Functions](#scale-azure-functions)  
+- [Compare with Other Azure Services](#compare-with-other-azure-services) 
+- [Develop Azure Functions](#develop-azure-functions) 
 
-## Learning References
-> 🌟 [Implement Azure Functions](https://learn.microsoft.com/en-us/training/paths/implement-azure-functions/) 🌟 
-
-> 🌟 [Implement Azure Functions](https://learn.microsoft.com/en-us/training/paths/implement-azure-functions/) 🌟 
 
 ## Introduction
 - Azure Functions is a serverless, event-driven compute service that is fully scalable, resilient, reliable, and secure.
