@@ -158,45 +158,6 @@ Default configuration provider uses environment variable that are set in Applica
 - **Configure an identity-based connection** - When hosted in Azure Functions service, identity-based connections use a managed identity.
 - Use **RBAC** to Grant permission to the identity to function app identity
 
-### Execute an Azure Function with triggers
-| Type | Purpose |
-| ---- | ------- |
-| **Timer** | Execute at a set interval |
-| **HTTP** | Execute when an HTTP request is received. |
-| **Blob** | Execute when a file is uploaded in Azure Blog storage. |
-| **Queue** | Execute when a message is added to an Azure Storage Queue |
-| **Azure Cosmos DB**| Execute when a document changes in a collection. |
-| **Event Hub** | Execute when a event hub receives a new event. |
-
-For Triggers and Binding Refer [https://learn.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library?tabs=v4%2Ccmd#triggers-and-bindings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library?tabs=v4%2Ccmd#triggers-and-bindings)
-
-## Timer Trigger
-A trigger that executes a function at a consistent interval. To create a timer trigger, you need to supply two pieces of information.
-- A Timestamp parameter name
-- A Schedule
-
-### CRON expression
-A CRON expression is a string that consists of six fields that represent a set of times.
-
-The order of the six fields in Azure is: `{second} {minute} {hour} {day} {month} {day of the week}`
-
-| Special Character | Meaning | Example |
-| :---------------: | ------- | ------- |
-| * | Selects every value in a field | "*" in the day of the week field means every day. |
-| , | Separates items in a list | "1, 3" in the day of the week field means Mondays (day 1) and Wednesday (day 3) |
-| - | Specifies range | "10-12" in the hour field means range that include 10, 11, and 12. |
-| / | Specifies increment | "*/10" in the minutes fields means increment of every 10 minutes. |
-
-
-Example:
-```
-0 */5 * * * *
-```
-- `*/5` contains 2 special characters,
-    - `*` - select every value within the field
-    - `/` - represents increment.
-    - When both combined together - it means every values 0-59, select fifth value - "every five minutes"
-
 ## Create a time trigger 
 ### Create a Azure Function App
 - [Using Azure portal](https://learn.microsoft.com/en-us/training/modules/develop-test-deploy-azure-functions-with-visual-studio/5-exercise-publish-azure-functions)
@@ -205,10 +166,6 @@ Example:
 
 ### Create a Azure Function locally
 - [Develop Azure Functions using Visual Studio](https://learn.microsoft.com/en-us/training/modules/develop-test-deploy-azure-functions-with-visual-studio/3-exercise-develop-and-test-azure-functions-locally)
-
-
-
-
 
 
 
