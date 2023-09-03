@@ -40,7 +40,8 @@ For complete commands list - [Commands Reference](https://learn.microsoft.com/en
 | Command | Description | Example |
 | ------- | ----------- | ------- |
 | create  | create a resource | `az storage account create --name  myStorageAccount` |
-| update  | update a resource | `az storage update create --sku Standard_LRS`
+| update  | update a resource | `az storage update create --sku Standard_LRS` |
+| delete    | delete a resources | `az group delete --name myResourceGroup` |
 | list    | list resources | `az functionapp list` |
 
 🌟 ***Parameters*** 🌟
