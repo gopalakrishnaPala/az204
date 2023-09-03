@@ -1,10 +1,10 @@
 # Azure Functions
 
-##### Table of Contents  
-[Introduction](#headers)  
-[Scale Azure Functions](#emphasis)  
-[Compare with Other Azure Services]() 
-[Develop Azure Functions]() 
+### Table of Contents  
+[Introduction](#introduction)  
+[Scale Azure Functions](#scale-azure-functions)  
+[Compare with Other Azure Services](#compare-with-other-azure-services) 
+[Develop Azure Functions](#develop-azure-functions) 
 
 ## Learning References
 > 🌟 [Implement Azure Functions](https://learn.microsoft.com/en-us/training/paths/implement-azure-functions/) 🌟 
