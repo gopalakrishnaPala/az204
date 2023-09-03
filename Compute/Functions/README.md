@@ -11,6 +11,11 @@
     - **Triggers** - ways to start execution of function
     - **Bindings** - ways to simplify coding for input and output
 
+### Function app
+- Provides an execution context in Azure in which functions run.
+- It's the unit of deployment and management for functions.
+- Contains one or more functions that are managed, deployed, and scaled together.
+
 ### Azure Functions Components
 | Component | Description |
 | --------- | ----------- |
@@ -49,14 +54,14 @@ Azure Functions uses an event-based architecture.
 - **Analyze IoT stream** - process data from IoT devices.
 - **Process file uploads**
 - **Serverless workflow**
-
-### Scale Azure Functions
-- In Consumption and Premium plans, Azure Functions scales CPU and memory resources by adding more instances of the Function host.
-- Unit of scale for Azure Functions is the function app.
-
+  
 ### Storage account requirements
 - On any plan, a function app requires Azure Storage account, which supports Azure Blob, Queue, Files and Table storage.
 - Rely's on storage for operations such as managing triggers and logging function executions.
+
+### Scale Azure Functions
+- Unit of scale for Azure Functions is the function app.
+- In Consumption and Premium plans, Azure Functions auto scales CPU and memory resources by adding more instances of the Function host.
 
 ### Azure Functions monitoring
 - Built-in integration with Azure Application Insights to monitor functions.
@@ -71,7 +76,6 @@ Azure Functions uses an event-based architecture.
     | Serverless app model with automatic scaling | Yes | No |
     | Pay-per-use pricing | Yes | No |
     | Integration with Logic Apps | Yes | No |
-
 
 ### Compare Azure Functions with Logic Apps
 - Both Azure Functions and Logic Apps are Azure services that enable serverless workloads.
@@ -100,10 +104,6 @@ Function contains two important pieces
         ]
     }
     ```
-### Function app
-- Provides an execution context in Azure in which functions run.
-- It's the unit of deployment and management for functions.
-- Contains one or more functions that are managed, deployed, and scaled together.
 
 ### Folder structure
 - Code for all the functions in a specific function app is located in a root project that contains a host configuration file (host.json). 
