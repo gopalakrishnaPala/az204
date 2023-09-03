@@ -86,7 +86,7 @@ Azure Functions uses an event-based architecture.
 - Like Azure Functions, Azure WebJobs with the WebJobs SDK is a code-first integration service.
 - Both are built on Top of Azure Service Plan.
 - Azure Functions are built on the WebJobs SDK.
-    |         | Functions | WbJobs with WebJobs SDK |
+    |         | Functions | WesbJobs with WebJobs SDK |
     | ------- | --------- | ----------------------- |
     | Serverless app model with automatic scaling | Yes | No |
     | Pay-per-use pricing | Yes | No |
@@ -131,40 +131,34 @@ Function contains two important pieces
 - For triggers, the direction in always `in`
 - Input and output bindings us `in` and `out`
 - Some bindings support a special direction `inout`
-
-### Azure Functions trigger and binding example
-```json
-{
-    "bindings": [
-        {
-            "type": "queueTrigger",
-            "direction": "in",
-            "name": "order",
-            "queueName": "myqueue-items",
-            "connection": "MY_STORAGE_ACCT_APP_SETTING"
-        },
-        {
-            "type": "table",
-            "direction": "out",
-            "name": "$return",
-            "tableName": "outTable",
-            "connection": "MY_TABLE_STORAGE_ACCT_SETTING"
-        }
-    ]
-}
-```
+- ***Example***
+    ```json
+    {
+        "bindings": [
+            {
+                "type": "queueTrigger",
+                "direction": "in",
+                "name": "order",
+                "queueName": "myqueue-items",
+                "connection": "MY_STORAGE_ACCT_APP_SETTING"
+            },
+            {
+                "type": "table",
+                "direction": "out",
+                "name": "$return",
+                "tableName": "outTable",
+                "connection": "MY_TABLE_STORAGE_ACCT_SETTING"
+            }
+        ]
+    }
+    ```
 
 ### Connect functions to Azure services
 Default configuration provider uses environment variable that are set in Application Settings when running in the Azure Function Service, or from the local settings file when developing locally.
+- **Configure an identity-based connection** - When hosted in Azure Functions service, identity-based connections use a managed identity.
+- Use **RBAC** to Grant permission to the identity to function app identity
 
-### Configure an identity-based connection
-- When hosted in Azure Functions service, identity-based connections use a managed identity.
-
-### Grant permission to the identity
-- use RBAC to assign permission to function app identity
-
-## Execute an Azure Function with triggers
-## Determins the best trigger for your Azure function
+### Execute an Azure Function with triggers
 | Type | Purpose |
 | ---- | ------- |
 | **Timer** | Execute at a set interval |
