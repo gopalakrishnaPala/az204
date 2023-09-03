@@ -1,8 +1,8 @@
 ﻿{
   "profiles": {
-    "Functions": {
+    "TimerTrigger": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7207",
+      "commandLineArgs": "--port 7291",
       "launchBrowser": false
     }
   }
