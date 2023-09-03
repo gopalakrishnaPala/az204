@@ -1,7 +1,7 @@
 # HTTP Trigger
 An HTTP trigger is a trigger that executes a function when it receives an HTTP request.
 
-## Have following capabilities and customizations
+## HTTP trigger functions have following capabilities and customizations
 - Provide authorized access by supplying keys.
 - Restrict which HTTP words are supported.
 - Return back data to caller.

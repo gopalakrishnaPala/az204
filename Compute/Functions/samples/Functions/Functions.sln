@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerTrigger", "TimerTrigge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpTrigger", "HttpTrigger\HttpTrigger.csproj", "{52D66006-2E94-4791-A41A-6229FD9FC97C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobTrigger", "BlobTrigger\BlobTrigger.csproj", "{59757989-8777-4518-8C56-36223BF1A2D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{52D66006-2E94-4791-A41A-6229FD9FC97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52D66006-2E94-4791-A41A-6229FD9FC97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52D66006-2E94-4791-A41A-6229FD9FC97C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59757989-8777-4518-8C56-36223BF1A2D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59757989-8777-4518-8C56-36223BF1A2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59757989-8777-4518-8C56-36223BF1A2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59757989-8777-4518-8C56-36223BF1A2D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

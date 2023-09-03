@@ -1,4 +1,5 @@
 ﻿<Properties StartupConfiguration="{C03562C0-5D9D-46BA-BCC2-C10CC33CD70D}|Default">
+  <MonoDevelop.Ide.ItemProperties.BlobTrigger FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.TimerTrigger PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.HttpTrigger FirstBuild="True" />
   <MultiItemStartupConfigurations />
