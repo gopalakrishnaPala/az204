@@ -1,5 +1,11 @@
 # Azure Functions
 
+##### Table of Contents  
+[Introduction](#headers)  
+[Scale Azure Functions](#emphasis)  
+[Compare with Other Azure Services]() 
+[Develop Azure Functions]() 
+
 ## Learning References
 > 🌟 [Implement Azure Functions](https://learn.microsoft.com/en-us/training/paths/implement-azure-functions/) 🌟 
 
@@ -79,7 +85,6 @@ Azure Functions uses an event-based architecture.
 - Can limit by setting `functionAppScaleLimit` value. 
     - Can be set to 0 or null for unrestricted.
     - value between 1 and the app maximum.
-
 
 ## Compare with Other Azure Services
 ### Compare Azure Functions with Web Jobs
