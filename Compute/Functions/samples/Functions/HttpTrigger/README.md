@@ -18,6 +18,7 @@ An HTTP trigger is a trigger that executes a function when it receives an HTTP r
 - If set to **Function** - can use both **Host** or **Function** keys.
 - If set to **Admin**- can use only **Host** keys.
 
+## Code
 ```csharp
 public async Task<IActionResult> Run(
     [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route=null)] HttpRequest req,
