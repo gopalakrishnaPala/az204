@@ -1,11 +1,10 @@
 # Azure Functions
 
-### Table of Contents  
+## Table of Contents  
 - [Introduction](#introduction)  
 - [Scale Azure Functions](#scale-azure-functions)  
 - [Compare with Other Azure Services](#compare-with-other-azure-services) 
 - [Develop Azure Functions](#develop-azure-functions) 
-
 
 ## Introduction
 - Azure Functions is a serverless, event-driven compute service that is fully scalable, resilient, reliable, and secure.
@@ -101,7 +100,7 @@ Azure Functions uses an event-based architecture.
 ## Develop Azure Functions
 Function contains two important pieces
 - Code
-- function.json File  
+- function.json file  
     - For compiled languages, config file is generated automatically from annotations in code, For scripting languages, must provide the config file yourself.
     - Defines the function's trigger, bindings and other configuration settings.
     - Every function has one and only one trigger.
@@ -124,12 +123,11 @@ Function contains two important pieces
 ### Folder structure
 - Code for all the functions in a specific function app is located in a root project that contains a host configuration file (host.json). 
 - Host.json file contains runtime-specific configurations and is the root folder of the function app.
-- C# Compiles folder structure
-      - Trigger and binding definitions
-          - **C# class library** - decorating methods and parameters with C# attributes
+- C# Compiles folder structure 
+    - **C# class library** - decorating methods and parameters with C# attributes
       - [Detailed .NET C# Functions](./FunctionCsharpDetailed.md)
 
-### Binding direction
+### Triggers and Binding direction
 - For triggers, the direction in always `in`
 - Input and output bindings us `in` and `out`
 - Some bindings support a special direction `inout`
