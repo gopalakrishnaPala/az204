@@ -20,6 +20,7 @@ An HTTP trigger is a trigger that executes a function when it receives an HTTP r
 
 ## Code
 ```csharp
+FunctionName("HttpTrigger")
 public async Task<IActionResult> Run(
     [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route=null)] HttpRequest req,
     ILogger log
