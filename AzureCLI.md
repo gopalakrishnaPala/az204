@@ -45,11 +45,11 @@ For complete commands list - [Commands Reference](https://learn.microsoft.com/en
 | list    | list resources | `az functionapp list` |
 
 🌟 ***Parameters*** 🌟
-| Parameter | Description |
+| Parameter | Short hand | Description |
 | --------- | ----------- |
-| resource-group | Resource group associated with the resource |
-| location | location of the resource |
-| name | name of the resource |
+| --resource-group |  -g | Resource group associated with the resource |
+| --location | -l |location of the resource |
+| name | -n| name of the resource |
 
 🌟 ***Command output format*** 🌟
 use --output (--out or -o) parameter to format CLI output
