@@ -62,9 +62,24 @@ Azure Functions uses an event-based architecture.
 ### Azure Functions monitoring
 - Built-in integration with Azure Application Insights to monitor functions.
   
-### Scale Azure Functions
+## Scale Azure Functions
 - Unit of scale for Azure Functions is the function app.
 - In Consumption and Premium plans, Azure Functions auto scales CPU and memory resources by adding more instances of the Function host.
+  **Cold start** - After the function app has been idle for a number of minutes, the platform may scale number of instances on which app runs to zero. The next request has the added latency of scalling from zero to one. This is reffered to as cold start.
+
+## Scaling Behaviors
+- **Maximum Instances** 
+    - A single function app only scales out to a maximum of 200 instances.
+    - There is no limit on maximum concurrent execututions. (Single isntance can serve requests).
+-- **New Instance Rate**
+    - For **Http Triggers** - new instances are allocated, at most, one per second.
+    - For **Non Http Triggers** - new instances are allocated, at most, one per 30 second.
+
+## Limit Scale-out
+- Can limit by setting `functionAppScaleLimit` value. 
+    - Can be set to 0 or null for unrestricted.
+    - value between 1 and the app maximum.
+
 
 ## Compare with Other Azure Services
 ### Compare Azure Functions with Web Jobs
