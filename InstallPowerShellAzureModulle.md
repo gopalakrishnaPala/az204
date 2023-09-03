@@ -24,3 +24,19 @@ Install-Module -Name Az -Repository PSGallery -Force
 Update-Module -Name Az -Force
 ```
 
+### Login to Azure Acount
+```cmd
+Connect-AzAccount
+```
+
+### Set the Subscription
+```cmd
+$Subscription="<subscription id>"
+Select-AzSubscription -SubscriptionId "$Subscription"
+```
+
+#### To get all the subscriptions
+```cmd
+# Get-AzSubscription 
+```
+
