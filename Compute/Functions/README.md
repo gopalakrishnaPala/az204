@@ -24,7 +24,7 @@
 | Function runtime | support many different runtimes such as .NET, Java, PowerShell and Python |
 | API Management | APIM provides security and routing for your HTTP triggered function endpoints |
 | Deployment slots | allow function app to run different instances. Slots are different environments exposed via a publicly available endpoint. way to swap new version into production |
-| Function app configuration | Connection strings, environment variables, and other application settings. Function app settings values can be read in teh code as environment variables. |
+| Function app configuration | Connection strings, environment variables, and other application settings. Function app settings values can be read in the code as environment variables. |
 
 ### Hosting options
 - **Hosting Plans**
