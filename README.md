@@ -29,3 +29,14 @@
     - Create and configure an Azure Function App
     - Implement input and output bindings
     - Implement function triggers by using data operations, timers, and webhooks
+
+## [Monitor, troubleshoot, and optimize Azure solutions (15–20%)]()
+- [Implement caching for solutions]()
+    - Configure cache and expiration policies for Azure Cache for Redis
+    - Implement secure and optimized application cache patterns including data sizing, connections, encryption, and expiration
+- [Troubleshoot solutions by using metrics and log data]()
+    - Configure an app or service to use Application Insights
+    - Review and analyze metrics and log data
+    - Implement Application Insights web tests and alerts
+
+
