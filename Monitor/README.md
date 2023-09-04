@@ -1,4 +1,9 @@
-# Application Insights
+# Azure Monitor overview
+Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to monitoring data from cloud and on-premises environments.
+
+The below image shows the high level architecture of Azure Monitor.
+![Azure CLI Documentation](./images/overview.svg)
+
 
 ## Azure Monitor Service
 ### Setting up Alerts
