@@ -36,6 +36,18 @@ Two kinds of metrics
 - **Log-based metrics**
 - **Standard metrics** stored as pre-aggregated time series.
 
+### Instrument an app for monitoring
+Application Insights is enabled through either *Auto-Instrumentation (agent)* or by adding *Application Insights SDK* to application code.
+
+- Auto-Instrumentation
+    - All you have to do is enable and in some cases, configure the agent, which collects the telemetry automatically.
+
+- Enabling via Application Insights SDKs
+    Need to install Application Insights SDK in the following circumstances
+    - require custom events and metrics
+    - require control over the flow of telemetry
+    - Auto-Instrumentation is not available
+
 
 ## Azure Monitor Service
 ### Setting up Alerts
