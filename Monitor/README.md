@@ -3,6 +3,24 @@
 ## Learning Reference 
  🌟 [Azure Monitor](https://learn.microsoft.com/en-us/training/paths/monitor-usage-performance-availability-resources-azure-monitor/) 🌟
 
+## Introduction to Monitoring
+Monitoring tracks the state, health, behavior, and performance of your applications and IT environment.
+
+Monitoring includes the following key activities
+- Data collection
+- Data analysis
+- Alerts
+- Visualization
+- Diagnostics and troubleshooting
+
+Monitoring provides the following important benefits
+- Performance and cost optimization
+- Proactive management
+- Reliability
+- Capacity planning
+- Security monitoring
+- Compliance and goverance monitoring
+
 Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to monitoring data from cloud and on-premises environments.
 
 The below image shows the high level architecture of Azure Monitor.
@@ -10,6 +28,10 @@ The below image shows the high level architecture of Azure Monitor.
 
 ## Application Insights
 Application Insights is an extension of Azure Monitor and provides Application Performance monitoring ("APM") features.
+- Data collection and storage
+- Data analysis and response
+- Alerts, workbooks, and visualizations
+
 
 ### Features Overview
 | Featured | Description |
