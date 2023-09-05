@@ -1,4 +1,8 @@
 # Azure Monitor overview
+
+## Learning Reference 
+ 🌟 [Azure Monitor](https://learn.microsoft.com/en-us/training/paths/monitor-usage-performance-availability-resources-azure-monitor/) 🌟
+
 Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to monitoring data from cloud and on-premises environments.
 
 The below image shows the high level architecture of Azure Monitor.
@@ -47,6 +51,22 @@ Application Insights is enabled through either *Auto-Instrumentation (agent)* or
     - require custom events and metrics
     - require control over the flow of telemetry
     - Auto-Instrumentation is not available
+
+- Enable via OpenCensus
+    OpenCensus is an open source, vendor-agnostic, single distribution of libraries to provide metrics collection and distributed tracing of services.
+
+### Select an availability test
+Can set up recurring tests to monitor availability and responsiveness.
+Three types of availability tests
+- **URL ping test(classic)**
+- **Standard test(preview)**
+- **Custom TrackAvailability test** 
+
+### Troubleshoot app performance by using Application Map
+- Each node on the map represents an application component or its dependencies; has an
+    - Health KPI
+    - Alert status
+- 
 
 
 ## Azure Monitor Service
