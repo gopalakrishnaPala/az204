@@ -1,46 +1,32 @@
 
-
-### Login to Azure Acount
-```cmd
-az login
-```
+# Create Azure Storage Account
 
 
-### Set the Subscription
-```cmd
-subscriptionid="<subscription id>"  # Azure Subscription Id
-az account set -s $subscriptionid   # Set the Subscription
-```
-
-```cmd
-az account list                     # To get the subscription details
-```
+> More Details on Azure CLI refer🌟 [Azure CLI Documentation](../AzureCLI.md) 🌟 
 
 # Set the Parameters for creating Azure Function App
 ```cmd
-resourceGroupName='gp-az204'        # Resource Group Name 
-storageName='gpdemostorage'         # Storage Account Name
-location='southindia'               # Resource Location
-storageSku='Standard_LRS'           # Storage Sku
+resourceGroup='rg-gp-az204'
+storage'stggpaz204'
+location='southindia'
 ```
 
 ### Create Resource Group
 ```cmd
-az group create --name $resourceGroupName --location $location
+az group create --name $resourceGroup --location $location
 ```
 
 ### Create a storage account
 ```cmd
-az storage account create --name $storageName --resource-group $resourceGroupName --location $location --sku $storageSku
+az storage account create --name $storageAccount --resource-group $resourceGroup --location $location --sku Standard_LRS
 ```
 
 ### Verify the created Function App
 ```cmd
-az storage account list                     # Get all function apps
-az storage account list | jq -r '.[].name'  # Get only the function app names
+az storage account list  
 ```
 
 ### Delete the resouce group
 ```cmd
-az group delete --name $resourceGroupName
+az group delete --name $resourceGroup
 ```

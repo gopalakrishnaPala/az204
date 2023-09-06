@@ -28,7 +28,7 @@
 > More Details on Azure CLI refer🌟 [Azure CLI Documentation](../../AzureCLI.md) 🌟 
 
 ### Step 1: Set the Parameters 
-```
+```azurecli
 resourceGroup='rg-gp-az204'
 location='southindia'
 functionApp='func-gp-az204'
