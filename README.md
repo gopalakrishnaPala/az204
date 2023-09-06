@@ -18,25 +18,23 @@
     - Run containers by using Azure Container Instance
     - Create solutions by using Azure Container Apps
 
-- [Implement Azure App Service Web Apps]()
+- [Implement Azure App Service Web Apps](Compute/AppService/README.md)
     - Create an Azure App Service Web App
     - Enable diagnostics logging
     - Deploy code to a web app
     - Configure web app settings including SSL, API settings, and connection strings
     - Implement autoscaling
 
-- [Implement Azure Functions](./Compute/Functions/README.md)
+- [Implement Azure Functions](Compute/Functions/README.md)
     - Create and configure an Azure Function App
     - Implement input and output bindings
     - Implement function triggers by using data operations, timers, and webhooks
 
-## [Monitor, troubleshoot, and optimize Azure solutions (15–20%)]()
-- [Implement caching for solutions]()
+## Monitor, troubleshoot, and optimize Azure solutions (15–20%)
+- [Implement caching for solutions](Caching/README.md)
     - Configure cache and expiration policies for Azure Cache for Redis
     - Implement secure and optimized application cache patterns including data sizing, connections, encryption, and expiration
-- [Troubleshoot solutions by using metrics and log data]()
+- [Troubleshoot solutions by using metrics and log data](Monitor/README.md)
     - Configure an app or service to use Application Insights
     - Review and analyze metrics and log data
     - Implement Application Insights web tests and alerts
-
-
