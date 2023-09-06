@@ -54,6 +54,13 @@ If an error occurs that causes the client to have any doubt about the outcome of
 ## Create Azure Service Bus Component
 - Using [Azure CLI](1_CreateAzureServiceBusCLI.md)
 
+### Service Bus pricing
+- Basic
+- Standard
+- Premium
+
+![Service Bus pricing](images/service_bus_pricing.PNG)
+
 ## Publish Messages to Service Bus - .NET Client
 
 - Install Nuget Package Packages
