@@ -49,7 +49,8 @@ For complete commands list - [Commands Reference](https://learn.microsoft.com/en
 | --------- | ---------- | ---------- |
 | --resource-group |  -g | Resource group associated with the resource |
 | --location | -l |location of the resource |
-| name | -n| name of the resource |
+| --name | -n | name of the resource |
+| --output | -o | formate output |
 
 🌟 ***Command output format*** 🌟
 use --output (--out or -o) parameter to format CLI output
