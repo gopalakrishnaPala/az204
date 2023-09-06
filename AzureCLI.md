@@ -46,7 +46,7 @@ For complete commands list - [Commands Reference](https://learn.microsoft.com/en
 
 🌟 ***Parameters*** 🌟
 | Parameter | Short hand | Description |
-| --------- | ----------- |
+| --------- | ---------- | ---------- |
 | --resource-group |  -g | Resource group associated with the resource |
 | --location | -l |location of the resource |
 | name | -n| name of the resource |
