@@ -71,7 +71,7 @@ If an error occurs that causes the client to have any doubt about the outcome of
     await serviceBusSender.SendMessageAsync(message);
 ```
 
-    -   Setting the content type to message
+-   Setting the content type to message
     ```csharp
         message.ContentType = "application/json";
     ```
