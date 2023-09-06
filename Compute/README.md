@@ -12,7 +12,7 @@
     - Configure web app settings including SSL, API settings, and connection strings
     - Implement autoscaling
 
-- [Implement Azure Functions](functions/README.md)
+- [Implement Azure Functions](Functions/README.md)
     - Create and configure an Azure Function App
     - Implement input and output bindings
     - Implement function triggers by using data operations, timers, and webhooks
