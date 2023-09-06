@@ -152,8 +152,6 @@ Three types of availability tests
 - Each node on the map represents an application component or its dependencies; has an
     - Health KPI
     - Alert status
-- 
-
 
 ## Azure Monitor Service
 ### Setting up Alerts
