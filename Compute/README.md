@@ -1,5 +1,5 @@
-# [Develop Azure compute solutions (25–30%)](Compute/README.md)
-- [Implement containerized solutions](Compute/Containers/README.md)
+# Develop Azure compute solutions (25–30%)
+## [Implement containerized solutions](./Containers)
     - Create and manage container images for solutions
         - Task Scenarios
             - Quick task
