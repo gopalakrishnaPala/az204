@@ -9,7 +9,7 @@
     ```
     resourceGroup='rg-gp-az204'
     location='southindia'
-    acrName='crgpaz204'
+    acrName='acrgpaz204'
     containerName='acr-gp-az204'
     ```
 
