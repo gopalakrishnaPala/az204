@@ -11,41 +11,16 @@
 
 ### For more details refer
 > - 🌟 [Skills measuered](AZ-204_StudyGuide_ENU_FY23Q3_v2.pdf) 🌟 
+> - 🌟 [Study Guide](https://learn.microsoft.com/en-gb/certifications/resources/study-guides/AZ-204) 🌟
 > - 🌟 [Exam readiness zone](https://learn.microsoft.com/en-us/shows/exam-readiness-zone) 🌟
 > - 🌟 [Training course](https://learn.microsoft.com/en-us/training/courses/az-204t00) 🌟 
 
 ## [Develop Azure compute solutions (25–30%)](Compute/README.md)
 - [Implement containerized solutions](Compute/Containers/README.md)
     - Create and manage container images for solutions
-        - Task Scenarios
-            - Quick task
-            - Automatically triggered tasks
-            - Multi-step task (familiarity YAML file for configuring tasks)
     - Publish an image to Azure Container Registry
-        - Use cases (Pull images from ACR to various deployment targes)
-            - Scalable orchestration
-            - Azure services
-        - Container Registry service tiers
-        - Supported images and artifacts
-        - Azure Container Registry tasks
     - Run containers by using Azure Container Instance
-        - Features
-        - Deployment (YAML files and ARM templates)
-        - Resource allocation  (Container Groups)
-        - Networking
-        - Storage
-        - Common scenarios (Multi container groups)
     - Create solutions by using Azure Container Apps
-        - Use Container Apps to
-            - Deploy API endpoints
-            - Host background processing applications
-            - Handle event-driven processing
-            - Run microservices
-        - Apps to dynamically scale on 
-            - HTTP traffic
-            - Event-driven processing
-            - CPU or memory load
-            - Any KEDA-support scaler
 
 - [Implement Azure App Service Web Apps](Compute/AppService/README.md)
     - Create an Azure App Service Web App
@@ -54,7 +29,7 @@
     - Configure web app settings including SSL, API settings, and connection strings
     - Implement autoscaling
 
-- [Implement Azure Functions](Compute/Functions/README.md)
+- [Implement Azure Functions](Compute/Functions/README.md) 
     - Create and configure an Azure Function App
     - Implement input and output bindings
     - Implement function triggers by using data operations, timers, and webhooks
