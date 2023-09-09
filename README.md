@@ -6,10 +6,12 @@
 - **[Study Guide](https://learn.microsoft.com/en-gb/certifications/resources/study-guides/AZ-204)**
 - **[Exam readiness zone](https://learn.microsoft.com/en-us/shows/exam-readiness-zone)**
 - **[Training course](https://learn.microsoft.com/en-us/training/courses/az-204t00)**
+- **[Udemy course](https://www.udemy.com/course/azure-certification-1/)**
+- **[Pluralsight Path](https://app.pluralsight.com/paths/certificate/developing-solutions-for-microsoft-azure-az-204)**
 
 ## Skills Measured
 - **[Develop Azure compute solutions (25–30%)](Compute)**
-- **[Develop for Azure storage (15–20%)](#)**
+- **[Develop for Azure storage (15–20%)](Storage)**
 - **[Implement Azure security (20–25%)](#)**
 - **[Monitor, troubleshoot, and optimize Azure solutions (15–20%)](#)**
 - **[Connect to and consume Azure services and third-party services (15–20%)](#)**
