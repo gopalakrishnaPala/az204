@@ -1,73 +1,81 @@
 # Develop Azure compute solutions (25–30%)
 ## [Implement containerized solutions](./Containers)
-    - Create and manage container images for solutions
-        - Task Scenarios
-            - Quick task
-            - Automatically triggered tasks
-            - Multi-step task (familiarity YAML file for configuring tasks)
-    - Publish an image to Azure Container Registry
-        - Use cases (Pull images from ACR to various deployment targes)
-            - Scalable orchestration
-            - Azure services
-        - Container Registry service tiers
-        - Supported images and artifacts
-        - Azure Container Registry tasks
-    - Run containers by using Azure Container Instance
-        - Features
-        - Deployment (YAML files and ARM templates)
-        - Resource allocation  (Container Groups)
-        - Networking
-        - Storage
-        - Common scenarios (Multi container groups)
-    - Create solutions by using Azure Container Apps
-        - Use Container Apps to
-            - Deploy API endpoints
-            - Host background processing applications
-            - Handle event-driven processing
-            - Run microservices
-        - Apps to dynamically scale on 
-            - HTTP traffic
-            - Event-driven processing
-            - CPU or memory load
-            - Any KEDA-support scaler
+- Create and manage container images for solutions
+    - Task Scenarios
+        - Quick task
+        - Automatically triggered tasks
+        - Multi-step task (familiarity YAML file for configuring tasks)
+- Publish an image to Azure Container Registry
+    - Use cases (Pull images from ACR to various deployment targes)
+        - Scalable orchestration
+        - Azure services
+    - Container Registry service tiers
+    - Supported images and artifacts
+    - Azure Container Registry tasks
+- Run containers by using Azure Container Instance
+    - Features
+    - Deployment (YAML files and ARM templates)
+    - Resource allocation  (Container Groups)
+    - Networking
+    - Storage
+    - Common scenarios (Multi container groups)
+- Create solutions by using Azure Container Apps
+    - Use Container Apps to
+        - Deploy API endpoints
+        - Host background processing applications
+        - Handle event-driven processing
+        - Run microservices
+    - Apps to dynamically scale on 
+        - HTTP traffic
+        - Event-driven processing
+        - CPU or memory load
+        - Any KEDA-support scaler
 
-- [Implement Azure App Service Web Apps](Compute/AppService/README.md)
-    - Create an Azure App Service Web App
-        - Introduction
-        - Pricing tier of an App Service plan
-        - How does app run and scale
-        - What if app needs more capabilities or features
-        - Built in auto scale support
-        - CI/CD
-        - Deployment slots
-        - App Service on Linux
-    - Enable diagnostics logging
-        - Enable application logging (windows)
-        - Enable application logging (linux/containers)
-        - Enable web server logging
-        - Add log messages in the code
-        - Stream logs
-        - Access log files
-    - Deploy code to a web app
-        - Automated deployment (Azure DevOps, GitHub, Bitbucket)
-        - Manula deployment (Git, CLI, Zipdeploy, FTP/S)
-        - Use deployment slots
-    - Configure web app settings including SSL, API settings, and connection strings
-        - Adding and editing settings
-        - Configure connection strings
-        - Add/Edit settings in bulk
-        - Stack settings
-        - Platform settings
-        - Debugging (Enable remote debugging)
-        - Incoming client certificates
-        - Configure Secure Socket Layer (SSL)
-    - Implement autoscaling
-        - Enable autoscalling
-        - Add scale conditions
-        - Create scale rules
-        - Monitor autoscaling activity
-        - Explore autoscale best practices 
+## [Implement Azure App Service Web Apps](Compute/AppService/README.md)
+- Create an Azure App Service Web App
+    - Introduction
+    - Pricing tier of an App Service plan
+    - How does app run and scale
+    - What if app needs more capabilities or features
+    - Built in auto scale support
+    - CI/CD
+    - Deployment slots
+    - App Service on Linux
+- Enable diagnostics logging
+    - Enable application logging (windows)
+    - Enable application logging (linux/containers)
+    - Enable web server logging
+    - Add log messages in the code
+    - Stream logs
+    - Access log files
+- Deploy code to a web app
+    - Automated deployment (Azure DevOps, GitHub, Bitbucket)
+    - Manula deployment (Git, CLI, Zipdeploy, FTP/S)
+    - Use deployment slots
+- Configure web app settings including SSL, API settings, and connection strings
+    - Adding and editing settings
+    - Configure connection strings
+    - Add/Edit settings in bulk
+    - Stack settings
+    - Platform settings
+    - Debugging (Enable remote debugging)
+    - Incoming client certificates
+    - Configure Secure Socket Layer (SSL)
+- Implement autoscaling
+    - Enable autoscalling
+    - Add scale conditions
+    - Create scale rules
+    - Monitor autoscaling activity
+    - Explore autoscale best practices 
 
+## Implement Azure Functions
+- Create and deploy Azure Functionapps
+- Implement input and output bindings for a function
+- Implmenet function triggers by using data operations, timers and webhooks
+- Implement Azure Durable Functions
+- Implement custom handlers
+
+## Summary
     - Create and manage container images for solutions
     - Discover the Azure Container Registry and explore Azure Container Instance (ACI)
     - Create Solutions by using Azure Container Apps and an Azure App Service Web App

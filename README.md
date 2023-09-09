@@ -8,6 +8,7 @@
 - **[Training course](https://learn.microsoft.com/en-us/training/courses/az-204t00)**
 - **[Udemy course](https://www.udemy.com/course/azure-certification-1/)**
 - **[Pluralsight Path](https://app.pluralsight.com/paths/certificate/developing-solutions-for-microsoft-azure-az-204)**
+-**[Azure Resource Naming](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)**
 
 ## Skills Measured
 - **[Develop Azure compute solutions (25–30%)](Compute)**

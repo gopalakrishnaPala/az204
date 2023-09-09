@@ -38,6 +38,7 @@
     ```
 
 ## Containerize .NET Application
+- Publish a ASP.NET application to folder and create a `Dockerfile` in publish folder.
 - Create a new file with name `Dockerfile` (with no extension)
 - Add the following content to `Dockerfile`
     ```dockerfile
