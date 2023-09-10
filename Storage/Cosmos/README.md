@@ -22,9 +22,9 @@
     - **Velocity** - defines the throughput
     - **Varity** - defines the schema
 - **NoSQL** database is designed 
-    - *Distributed* - Replicas ensure high availability and resilence
-    - *Scale-out* - Horizontal partitioning for elastic storage and throughput
-    - *Schema-free* - No enforced schema. No defined shape
+    - **Distributed** - Replicas ensure high availability and resilence
+    - **Scale-out** - Horizontal partitioning for elastic storage and throughput
+    - **Schema-free** - No enforced schema. No defined shape
 
 ### Cosmos DB
 - **Massively scalalbe NoSQL database** i.e. fully managed Azure PaaS and has Single-digit millisecond reads and writes.
@@ -34,25 +34,23 @@
  
 ### Getting Started
 - **30-day Free trail** - http://azure.microsoft.com/try/cosmosdb
-- **Azure Portal** - Free Tire for the first Cosomos db in the subscription (upto $64/mo free)
+- **Azure Portal** - Free Tire for the first Cosomos db account in the subscription (upto $64/mo free)
 - **Local Emulator** - http://aka.ms/cosmosdb-emulator
 
 ### Create a Cosmos DB
-- Capacity 
-    - Provisioned thorughput
-    - Serverless
+#### Create a Cosmos DB Account
+- **API** specifies the underlying data model (SQL API)
+- **Capacity Mode**
+    - **Provisioned thorughput** - set specified amount of throughput i.e., always available
+    - **Serverless** - only pay for what you use (for small and medium sized workloads)
+- **Global Distribution** - Geo-Redundancy, Multi-region writes, Avilability zones.
 
-- Global Distribution
-
-#### Creat Container
-- Data Explorer
-
+#### Create Container
+- Go to **Data Explorer** in the Portal Left Menu
 - Need to create multiple containers based on
-    - Throughput - performance
-    - Partition - How data is seggregated
-
-- Analytics store
-
+    - **Throughput** - performance level.
+    - **Partition** - How data is seggregated.
+- **Analytics store** - create a column store data based on transactions and enable synapse link for this Cosmos DB.
 - Container
     - Items
 
