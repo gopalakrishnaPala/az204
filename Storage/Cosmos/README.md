@@ -1,48 +1,45 @@
 # Azure Cosmos DB
-## Concepts
-- Introduction
-- Throughput an dCost
-- Horizontal Partitioning
-- Global Distribution
 
-## How-to
-- Data Modeling and Migration
-- Querying with SQL
-- Programming with the .NET SDK
-- Advanced Programming Features
-- Management and Security
-- Using the Gremlin API
+## Contents
+- Concepts
+    - Introduction
+    - Throughput and Cost
+    - Horizontal Partitioning
+    - Global Distribution
+- How to
+    - Data Modeling and Migration
+    - Querying with SQL
+    - Programming with the .NET SDK
+    - Advanced Programming Features
+    - Management and Security
+    - Using the Gremlin API
 
-## NoSQL
-- Big Data
-    - Volume  (Scale out - terabytes, petabytes)
-    - Velocity (throughput)
-    - Varity  (schema)
+## Introduction
+### NoSQL
+- Relational databases are not designed for handling big data. Relational databases can scale up, but difficult to scale out.
+- 3 V's of Big Data
+    - **Volume** - terabytes, petabytes of data.
+    - **Velocity** - defines the throughput
+    - **Varity** - defines the schema
+- **NoSQL** database is designed 
+    - *Distributed* - Replicas ensure high availability and resilence
+    - *Scale-out* - Horizontal partitioning for elastic storage and throughput
+    - *Schema-free* - No enforced schema. No defined shape
 
-- *Distributes* - Replicas ensure high availability and resilence
-- *Scale-out* - Horizontal partitioning for elastic storage and throughput
-- *Schema-free* - No enforced schema. No defined shape
-
-## Cosmos DB
-- Massively scalalbe NoSQL database
-    - Fully managed Azure PaaS
-    - Single-digit millisecond reads and writes
-
-- Automatic Horizontal Partitioning
-    - Elastic scale for both storage and throughput
-
-- Global distribution
-    - Point-and-click geo-replication
-    - Multiple write regions
-
-- Multi-model/Multi-API
-    - Not exclusively a document database
-    - Also supports table, graph, and columnar
+### Cosmos DB
+- **Massively scalalbe NoSQL database** i.e. fully managed Azure PaaS and has Single-digit millisecond reads and writes.
+- **Automatic Horizontal Partitioning** which has elastic scale for both storage and throughput
+- **Global distribution** with Point-and-click geo-replication and Multiple write region
+- **Multi-model/Multi-API** which supports document database, table, graph, and columnar.
+ 
+### Getting Started
+- **30-day Free trail** - http://azure.microsoft.com/try/cosmosdb
+- **Azure Portal** - Free Tire for the first Cosomos db in the subscription (upto $64/mo free)
+- **Local Emulator** - http://aka.ms/cosmosdb-emulator
 
 ### Create a Cosmos DB
-
 - Capacity 
-    - Provisiioned thorughput
+    - Provisioned thorughput
     - Serverless
 
 - Global Distribution
