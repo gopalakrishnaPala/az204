@@ -1,17 +1,17 @@
 # Azure Cosmos DB
-- Concepts
-    - Introduction
-    - Throughput an dCost
-    - Horizontal Partitioning
-    - Global Distribution
+## Concepts
+- Introduction
+- Throughput an dCost
+- Horizontal Partitioning
+- Global Distribution
 
-- How-to
-    - Data Modeling and Migration
-    - Querying with SQL
-    - Programming with the .NET SDK
-    - Advanced Programming Features
-    - Management and Security
-    - Using the Gremlin API
+## How-to
+- Data Modeling and Migration
+- Querying with SQL
+- Programming with the .NET SDK
+- Advanced Programming Features
+- Management and Security
+- Using the Gremlin API
 
 ## NoSQL
 - Big Data
@@ -70,44 +70,42 @@
     - REST API
 
 - Creating a simple Notebook
-    - 
 
 - Automatic Indexing
     - Indexed entries for querying
 
-- Multiple APIs and Data Models
-    - SQL API
-        - JSON Document
-        - SQL queries
-    
-    - MangoDB API
-        - BSON Document
-        - MangoDB queries
-        ---- Standard DB Driver support
+### Multiple APIs and Data Models
+- SQL API
+    - JSON Document
+    - SQL queries
 
-    - Table API
-        - Key-Value
-        - Azure Table Storage
-    
-    - Gremlin API
-        - Graph
-        - Vertices and Edges
-    
-    - Cassandra API
-        - Columnar
-        - Schema
+- MangoDB API
+    - BSON Document
+    - MangoDB queries
+    - Standard DB Driver support
 
--
-    - Global Distribution
-    - Horizontal Partitioning
-    - Automatic Indexing
-    - Provisioned Throughput
+- Table API
+    - Key-Value
+    - Azure Table Storage
+
+- Gremlin API
+    - Graph
+    - Vertices and Edges
+
+- Cassandra API
+    - Columnar
+    - Schema
+
+### Advantages
+- Global Distribution
+- Horizontal Partitioning
+- Automatic Indexing
+- Provisioned Throughput
 
 - Atom Record Sequence (ARS)
-    - It's all ARS under the covers, projected as any desired data model
+    - It's all ARS under the cover, projected as any desired data model
 
 ## Throughput and Cost
-
 - Measuring Performance
     - **Latency** - How fast is the response for a given request?  
     - **Throughput** - How many requests can be served within a specific period of time?
@@ -274,7 +272,7 @@ graph TD;
         - It takes hundreds of milliseconds to move data across continents
         - Much more common to experience dirty reads
 
-- Consistency Levels
+### Consistency Levels
     - Strong
     - Bounded Staleness
     - Session
@@ -379,7 +377,6 @@ graph TD;
     - Simple Query
         ```sql
         SELECT * FROM c  /* Get all the documents from the container */
-
         -- If using specific properties instead of *, then it will e a projection
         ```
 - Scalar Expression Queries
@@ -453,10 +450,6 @@ graph TD;
 
 - Calculated Properties
 - Aggregation queries
-- 
-
-    
-    ```
 
 
 
