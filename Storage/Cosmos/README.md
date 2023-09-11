@@ -53,9 +53,7 @@
 - **Analytics store** - create a column store data based on transactions and enable synapse link for this Cosmos DB.
 - Container
     - Items
-
     - Single partition query, cross partition query
-
 - Management Options
     - Azure Portal
     - Azure CLI
