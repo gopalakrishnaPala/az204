@@ -2,6 +2,7 @@
 
 ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) 
 
+
 ## Introduction
 ### NoSQL
 Relational databases are not designed for handling big data. Relational databases can scale up, but difficult to scale out.
@@ -48,9 +49,7 @@ Relational databases are not designed for handling big data. Relational database
 - Each document will have a unique `id` property.
 - Filtering on the partition key result in **Single partition query**, filtering on other properties result in **cross partition query**.
 
-```
-***Note:*** Management Options - Azure Portal, Azure CLI, PowerShell,  ARM Templates, Notebooks, REST API
-```
+🗒️ ***Management Options***: Azure Portal, Azure CLI, PowerShell,  ARM Templates, Notebooks, REST API
 
 #### Create Notebook
 - Creating a simple Notebook
