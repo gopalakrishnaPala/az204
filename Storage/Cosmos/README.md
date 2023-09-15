@@ -1,30 +1,18 @@
-# Azure Cosmos DB
-
-## Contents
-- Concepts
-    - Introduction
-    - Throughput and Cost
-    - Horizontal Partitioning
-    - Global Distribution
-- How to
-    - Data Modeling and Migration
-    - Querying with SQL
-    - Programming with the .NET SDK
-    - Advanced Programming Features
-    - Management and Security
-    - Using the Gremlin API
+# ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) Azure Cosmos DB
 
 ## Introduction
 ### NoSQL
-- Relational databases are not designed for handling big data. Relational databases can scale up, but difficult to scale out.
-- 3 V's of Big Data
-    - **Volume** - terabytes, petabytes of data.
-    - **Velocity** - defines the throughput
-    - **Varity** - defines the schema
-- **NoSQL** database is designed 
-    - **Distributed** - Replicas ensure high availability and resilence
-    - **Scale-out** - Horizontal partitioning for elastic storage and throughput
-    - **Schema-free** - No enforced schema. No defined shape
+Relational databases are not designed for handling big data. Relational databases can scale up, but difficult to scale out.
+
+**3 V's** of Big Data
+- **Volume** - terabytes, petabytes of data.
+- **Velocity** - defines the throughput
+- **Varity** - defines the schema
+
+**NoSQL** database is designed 
+- **Distributed** - Replicas ensure high availability and resilence
+- **Scale-out** - Horizontal partitioning for elastic storage and throughput
+- **Schema-free** - No enforced schema. No defined shape
 
 ### Cosmos DB
 - **Massively scalalbe NoSQL database** i.e. fully managed Azure PaaS and has Single-digit millisecond reads and writes.
@@ -40,28 +28,29 @@
 ### Create a Cosmos DB
 #### Create a Cosmos DB Account
 - **API** specifies the underlying data model (SQL API)
-- **Capacity Mode**
-    - **Provisioned thorughput** - set specified amount of throughput i.e., always available
+- **Capacity Mode** options
+    - **Provisioned throughput** - set specified amount of throughput i.e., always available
     - **Serverless** - only pay for what you use (for small and medium sized workloads)
-- **Global Distribution** - Geo-Redundancy, Multi-region writes, Avilability zones.
+- **Global Distribution** options 
+    - Geo-Redundancy
+    - Multi-region writes
+    - Avilability zones
 
 #### Create Container
 - Go to **Data Explorer** in the Portal Left Menu
-- Need to create multiple containers based on
+- Need to create multiple containers in a database based on
     - **Throughput** - performance level.
     - **Partition** - How data is seggregated.
-- **Analytics store** - create a column store data based on transactions and enable synapse link for this Cosmos DB.
-- Container
-    - Items
-    - Single partition query, cross partition query
-- Management Options
-    - Azure Portal
-    - Azure CLI
-    - PowerShell
-    - ARM Templates
-    - Notebooks
-    - REST API
+- **Analytics store** option creates a column store data based on transactions and enable synapse link for this Cosmos DB.
+- Container contains items (collection of document)
+- Each document will have a unique `id` property.
+- Filtering on the partition key result in **Single partition query**, filtering on other properties result in **cross partition query**.
 
+```
+***Note:*** Management Options - Azure Portal, Azure CLI, PowerShell,  ARM Templates, Notebooks, REST API
+```
+
+#### Create Notebook
 - Creating a simple Notebook
 
 - Automatic Indexing
