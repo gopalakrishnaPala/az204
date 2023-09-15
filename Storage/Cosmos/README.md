@@ -1,4 +1,4 @@
-# ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![Cosmos](./images/10121-icon-service-Azure-Cosmos-DB.svg) Cosmos DB
+![Cosmos](./images/10121-icon-service-Azure-Cosmos-DB.svg) Cosmos DB # ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) 
 
 ## Introduction
 ### NoSQL
