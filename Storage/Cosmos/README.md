@@ -49,35 +49,21 @@ Relational databases are not designed for handling big data. Relational database
 - Each document will have a unique `id` property.
 - Filtering on the partition key result in **Single partition query**, filtering on other properties result in **cross partition query**.
 
-🗒️ ***Management Options***: Azure Portal, Azure CLI, PowerShell,  ARM Templates, Notebooks, REST API
+> 🗒️ ***Management Options***: Azure Portal, Azure CLI, PowerShell,  ARM Templates, Notebooks, REST API
 
-#### Create Notebook
-- Creating a simple Notebook
-
-- Automatic Indexing
-    - Indexed entries for querying
+#### Automatic Indexing
+![](./images/indexing.png)
 
 ### Multiple APIs and Data Models
-- SQL API
-    - JSON Document
-    - SQL queries
+| API | Description |
+| --- | ----------- |
+| SQL API | <ul><li>JSON Document</li><li>SQL queries</li></ul> |
+| MangoDB API | <ul><li>BSON Document</li><li>MangoDB queries</li><li>Standard DB Driver support</li></ul> |
+| Table API | <ul><li>Key-Value</li><li>Azure Table Storage</li></ul> |
+| Gremlin API | <ul><li>Graph Vertices and Edges</li></ul> |
+| Cassandra API | <ul><li>Columnar</li><li>Schema </li></ul> |
 
-- MangoDB API
-    - BSON Document
-    - MangoDB queries
-    - Standard DB Driver support
-
-- Table API
-    - Key-Value
-    - Azure Table Storage
-
-- Gremlin API
-    - Graph
-    - Vertices and Edges
-
-- Cassandra API
-    - Columnar
-    - Schema
+![](./images/apis.png)
 
 ### Advantages
 - Global Distribution
