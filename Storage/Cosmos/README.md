@@ -55,13 +55,9 @@ Relational databases are not designed for handling big data. Relational database
 ![](./images/indexing.png)
 
 ### Multiple APIs and Data Models
-| API | Description |
-| --- | ----------- |
-| SQL API | <ul><li>JSON Document</li><li>SQL queries</li></ul> |
-| MangoDB API | <ul><li>BSON Document</li><li>MangoDB queries</li><li>Standard DB Driver support</li></ul> |
-| Table API | <ul><li>Key-Value</li><li>Azure Table Storage</li></ul> |
-| Gremlin API | <ul><li>Graph Vertices and Edges</li></ul> |
-| Cassandra API | <ul><li>Columnar</li><li>Schema </li></ul> |
+| SQL API  | MangoDB API | Table API | Gremlin API | Cassandra API |
+| -------- | ----------- | --------- | ----------- | ------------- |
+| <ul><li>JSON Document</li><li>SQL queries</li></ul> | <ul><li>BSON Document</li><li>MangoDB queries</li><li>Standard DB Driver support</li></ul> | <ul><li>Key-Value</li><li>Azure Table Storage</li></ul> | <ul><li>Graph Vertices and Edges</li></ul> | <ul><li>Columnar</li><li>Schema </li></ul> |
 
 ![](./images/apis.png)
 
