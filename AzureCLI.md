@@ -1,26 +1,32 @@
 # Azure CLI
 
 ## Installation
-![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) [Install Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)   
+![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white)  <br />
+[Install Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)   
 
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ***Run on Docker Container***
-  
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)  <br />
+***Run on Docker Container***
+
 ```docker
 docker run -it mcr.microsoft.com/azure-cli
 ```
 
 ## Commands syntax
-🌟 ***Syntax pattern*** 🌟
-> `command group + command subgroup + command + --parameters`
+![Syntax Pattern](https://img.shields.io/badge/Syntax_pattern-blue?logo=pinboard) <br />
+`[group]  [subgroup]  [command] [--parameters]`
 
 
-*Example*:
-> `az storage account create --name myStorageAccount`
-> | command | subgroup | command | parameters |
-> | ------- | -------- | ------- | ---------- |
-> | storage | account | create | name |
+![Example](https://img.shields.io/badge/Example-green?logo=pinboard)
+```
+az storage account create --name myStorageAccount
+```
 
-🌟 ***Command Groups*** 🌟
+| command | subgroup | command | parameters |
+| ------- | -------- | ------- | ---------- |
+| storage | account | create | name |
+
+
+### Command Groups
 
 | Command | Description |
 | ----- | ----------------------- |
@@ -37,9 +43,10 @@ docker run -it mcr.microsoft.com/azure-cli
 | az eventgrid | Manage Event grids |
 | az cosmosdb | Manage Cosmos db |
 
-For complete commands list - [Commands Reference](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
+![Syntax Pattern](https://img.shields.io/badge/Reference-blue?logo=pinboard) ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white)  <br />
+[Commands Reference](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 
-🌟 ***Commands*** 🌟
+### Commands
 | Command | Description | Example |
 | ------- | ----------- | ------- |
 | create  | create a resource | `az storage account create --name  myStorageAccount` |
@@ -47,7 +54,7 @@ For complete commands list - [Commands Reference](https://learn.microsoft.com/en
 | delete    | delete a resources | `az group delete --name myResourceGroup` |
 | list    | list resources | `az functionapp list` |
 
-🌟 ***Parameters*** 🌟
+### Parameters
 | Parameter | Short hand | Description |
 | --------- | ---------- | ---------- |
 | --resource-group |  -g | Resource group associated with the resource |
@@ -55,7 +62,7 @@ For complete commands list - [Commands Reference](https://learn.microsoft.com/en
 | --name | -n | name of the resource |
 | --output | -o | formate output |
 
-🌟 ***Command output format*** 🌟
+### Command output format
 use --output (--out or -o) parameter to format CLI output
 
 | --output | Description |
@@ -68,9 +75,9 @@ use --output (--out or -o) parameter to format CLI output
 | tsv | Tab-separated values, with no keys |
 | none | No output other than errors and warnings |
 
-For detailed output Formates refer [Output formats for Azure CLI commands](https://learn.microsoft.com/en-us/cli/azure/format-output-azure-cli)
+![Syntax Pattern](https://img.shields.io/badge/Reference-blue?logo=pinboard) ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white)  <br />
+[Output formats for Azure CLI commands](https://learn.microsoft.com/en-us/cli/azure/format-output-azure-cli)
 
-🌟 ***Query command outputs*** 🌟
 
 ## Login 
 ```
