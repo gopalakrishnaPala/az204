@@ -1,100 +1,65 @@
-# Azure Cosmos DB
-## Concepts
-- Introduction
-- Throughput an dCost
-- Horizontal Partitioning
-- Global Distribution
+# <img src="./images/10121-icon-service-Azure-Cosmos-DB.svg"  width="30" height="30" /> Cosmos DB 
 
-## How-to
-- Data Modeling and Migration
-- Querying with SQL
-- Programming with the .NET SDK
-- Advanced Programming Features
-- Management and Security
-- Using the Gremlin API
+![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) 
 
-## NoSQL
-- Big Data
-    - Volume  (Scale out - terabytes, petabytes)
-    - Velocity (throughput)
-    - Varity  (schema)
 
-- *Distributes* - Replicas ensure high availability and resilence
-- *Scale-out* - Horizontal partitioning for elastic storage and throughput
-- *Schema-free* - No enforced schema. No defined shape
+## Introduction
+### NoSQL
+Relational databases are not designed for handling big data. Relational databases can scale up, but difficult to scale out.
 
-## Cosmos DB
-- Massively scalalbe NoSQL database
-    - Fully managed Azure PaaS
-    - Single-digit millisecond reads and writes
+**3 V's** of Big Data
+- **Volume** - terabytes, petabytes of data.
+- **Velocity** - defines the throughput
+- **Varity** - defines the schema
 
-- Automatic Horizontal Partitioning
-    - Elastic scale for both storage and throughput
+**NoSQL** database is designed 
+- **Distributed** - Replicas ensure high availability and resilence
+- **Scale-out** - Horizontal partitioning for elastic storage and throughput
+- **Schema-free** - No enforced schema. No defined shape
 
-- Global distribution
-    - Point-and-click geo-replication
-    - Multiple write regions
-
-- Multi-model/Multi-API
-    - Not exclusively a document database
-    - Also supports table, graph, and columnar
+### Cosmos DB
+- **Massively scalalbe NoSQL database** i.e. fully managed Azure PaaS and has Single-digit millisecond reads and writes.
+- **Automatic Horizontal Partitioning** which has elastic scale for both storage and throughput
+- **Global distribution** with Point-and-click geo-replication and Multiple write region
+- **Multi-model/Multi-API** which supports document database, table, graph, and columnar.
+ 
+### Getting Started
+- **30-day Free trail** - http://azure.microsoft.com/try/cosmosdb
+- **Azure Portal** - Free Tire for the first Cosomos db account in the subscription (upto $64/mo free)
+- **Local Emulator** - http://aka.ms/cosmosdb-emulator
 
 ### Create a Cosmos DB
+#### Create a Cosmos DB Account
+- **API** specifies the underlying data model (SQL API)
+- **Capacity Mode** options
+    - **Provisioned throughput** - set specified amount of throughput i.e., always available
+    - **Serverless** - only pay for what you use (for small and medium sized workloads)
+- **Global Distribution** options 
+    - Geo-Redundancy
+    - Multi-region writes
+    - Avilability zones
 
-- Capacity 
-    - Provisiioned thorughput
-    - Serverless
+#### Create Container
+- Go to **Data Explorer** in the Portal Left Menu
+- Need to create multiple containers in a database based on
+    - **Throughput** - performance level.
+    - **Partition** - How data is seggregated.
+- **Analytics store** option creates a column store data based on transactions and enable synapse link for this Cosmos DB.
+- Container contains items (collection of document)
+- Each document will have a unique `id` property.
+- Filtering on the partition key result in **Single partition query**, filtering on other properties result in **cross partition query**.
 
-- Global Distribution
+> 🗒️ ***Management Options***: Azure Portal, Azure CLI, PowerShell,  ARM Templates, Notebooks, REST API
 
-#### Creat Container
-- Data Explorer
-
-- Need to create multiple containers based on
-    - Throughput - performance
-    - Partition - How data is seggregated
-
-- Analytics store
-
-- Container
-    - Items
-
-    - Single partition query, cross partition query
-
-- Management Options
-    - Azure Portal
-    - Azure CLI
-    - PowerShell
-    - ARM Templates
-    - Notebooks
-    - REST API
-
-- Creating a simple Notebook
-
-- Automatic Indexing
-    - Indexed entries for querying
+#### Automatic Indexing
+![](./images/indexing.png)
 
 ### Multiple APIs and Data Models
-- SQL API
-    - JSON Document
-    - SQL queries
+| SQL API  | MangoDB API | Table API | Gremlin API | Cassandra API |
+| -------- | ----------- | --------- | ----------- | ------------- |
+| <ul><li>JSON Document</li><li>SQL queries</li></ul> | <ul><li>BSON Document</li><li>MangoDB queries</li><li>Standard DB Driver support</li></ul> | <ul><li>Key-Value</li><li>Azure Table Storage</li></ul> | <ul><li>Graph Vertices and Edges</li></ul> | <ul><li>Columnar</li><li>Schema </li></ul> |
 
-- MangoDB API
-    - BSON Document
-    - MangoDB queries
-    - Standard DB Driver support
-
-- Table API
-    - Key-Value
-    - Azure Table Storage
-
-- Gremlin API
-    - Graph
-    - Vertices and Edges
-
-- Cassandra API
-    - Columnar
-    - Schema
+![](./images/apis.png)
 
 ### Advantages
 - Global Distribution

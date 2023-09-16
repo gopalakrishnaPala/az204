@@ -1,5 +1,5 @@
 # Develop Azure compute solutions (25–30%)
-## [Implement containerized solutions](./Containers)
+## [Implement containerized solutions](Compute/Containers/README.md)
 - Create and manage container images for solutions
     - Task Scenarios
         - Quick task
@@ -68,7 +68,7 @@
     - Monitor autoscaling activity
     - Explore autoscale best practices 
 
-## Implement Azure Functions
+## [Implement Azure Functions](Compute/Functions/README.md)
 - Create and deploy Azure Functionapps
 - Implement input and output bindings for a function
 - Implmenet function triggers by using data operations, timers and webhooks
@@ -76,14 +76,14 @@
 - Implement custom handlers
 
 ## Summary
-    - Create and manage container images for solutions
-    - Discover the Azure Container Registry and explore Azure Container Instance (ACI)
-    - Create Solutions by using Azure Container Apps and an Azure App Service Web App
-    - Enable diagnostic logging and configure application settings
-    - Deploy to App Service
-    - Examine auto scale factors
-    - Enable auto scale in App Service
-    - Explore auto scale best practices
-    - Discover Azure Functions
-    - Explore Azure Functions development
-    - Create triggers and bindings
+- Create and manage container images for solutions
+- Discover the Azure Container Registry and explore Azure Container Instance (ACI)
+- Create Solutions by using Azure Container Apps and an Azure App Service Web App
+- Enable diagnostic logging and configure application settings
+- Deploy to App Service
+- Examine auto scale factors
+- Enable auto scale in App Service
+- Explore auto scale best practices
+- Discover Azure Functions
+- Explore Azure Functions development
+- Create triggers and bindings
