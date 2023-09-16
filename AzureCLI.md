@@ -1,7 +1,9 @@
 # Azure CLI
 
 ## Installation
->  🌟 [Install Azure CLI Locally](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) 🌟
+<div style="background-color: #036aa7; padding:10px;margin:5px;">
+<a style="color: white;font-weight:bold;" href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli"> Install Azure CLI Locally </a>
+</div>
 
 > Run on Docker Container <br />
 > `docker run -it mcr.microsoft.com/azure-cli`
