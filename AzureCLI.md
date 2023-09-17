@@ -41,8 +41,8 @@ docker run -it mcr.microsoft.com/azure-cli
 | az eventgrid | Manage Event grids |
 | az cosmosdb | Manage Cosmos db |
 
-[Commands Reference](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white)
+[Commands Reference](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 
 ### Commands
 | Command | Description | Example |
@@ -73,9 +73,8 @@ use --output (--out or -o) parameter to format CLI output
 | tsv | Tab-separated values, with no keys |
 | none | No output other than errors and warnings |
 
-[Output formats for Azure CLI commands](https://learn.microsoft.com/en-us/cli/azure/format-output-azure-cli)
 ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) 
-
+[Output formats for Azure CLI commands](https://learn.microsoft.com/en-us/cli/azure/format-output-azure-cli)
 
 ## Login 
 ```
