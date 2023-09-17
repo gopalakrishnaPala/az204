@@ -12,14 +12,12 @@ docker run -it mcr.microsoft.com/azure-cli
 ```
 
 ## Commands syntax
-![Syntax Pattern](https://img.shields.io/badge/Syntax_pattern-blue?logo=pinboard) <br />
+### Syntax ![Syntax](https://img.shields.io/badge/-blue?logo=pinboard) 
 `[group]  [subgroup]  [command] [--parameters]`
 
+### Example ![Example](https://img.shields.io/badge/-green?logo=pinboard)
+`az storage account create --name myStorageAccount`
 
-![Example](https://img.shields.io/badge/Example-green?logo=pinboard)
-```
-az storage account create --name myStorageAccount
-```
 
 | command | subgroup | command | parameters |
 | ------- | -------- | ------- | ---------- |
@@ -43,8 +41,8 @@ az storage account create --name myStorageAccount
 | az eventgrid | Manage Event grids |
 | az cosmosdb | Manage Cosmos db |
 
-![Syntax Pattern](https://img.shields.io/badge/Reference-blue?logo=pinboard) ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white)  <br />
 [Commands Reference](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
+![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white)
 
 ### Commands
 | Command | Description | Example |
@@ -75,8 +73,8 @@ use --output (--out or -o) parameter to format CLI output
 | tsv | Tab-separated values, with no keys |
 | none | No output other than errors and warnings |
 
-![Syntax Pattern](https://img.shields.io/badge/Reference-blue?logo=pinboard) ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white)  <br />
 [Output formats for Azure CLI commands](https://learn.microsoft.com/en-us/cli/azure/format-output-azure-cli)
+![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) 
 
 
 ## Login 
@@ -110,8 +108,6 @@ az login
     ```
     az group create --name MyResourceGroup --location southindia
     ```
-
-- 
 
 
 
