@@ -10,14 +10,15 @@
 ## Usefull Links
 |           |           |  
 | --------- | --------- |
-| [Certification page](https://learn.microsoft.com/en-us/certifications/exams/az-204/) | ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) |
-| [Skills measured](AZ-204_StudyGuide_ENU_FY23Q3_v2.pdf) | ![PDF](./images/pdf_badge.svg) |
-| [Study Guide](https://learn.microsoft.com/en-gb/certifications/resources/study-guides/AZ-204) | ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) |
-| [Exam readiness zone](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-204-develop-azure-compute-solutions-1-of-5) | ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) |
-| [Training course](https://learn.microsoft.com/en-us/training/courses/az-204t00) | ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) |
-| [Azure CLI commands](./AzureCLI.md) | ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0) |
-| [Powershell cmdlets](./powershell.md) | ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) |
-| [Learning Path](https://app.pluralsight.com/paths/certificate/developing-solutions-for-microsoft-azure-az-204) | ![Pluralsight](https://img.shields.io/badge/Pluralsight-EE3057?style=for-the-badge&logo=pluralsight&logoColor=white) |
-| [Certification course](https://www.udemy.com/course/azure-certification-1/) | ![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white) |
-| [Azure Naming Conventions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming) | ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) |
+| ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) | [Certification page](https://learn.microsoft.com/en-us/certifications/exams/az-204/) |
+| ![PDF](https://img.shields.io/badge/Pdf-EF3939?style=for-the-badge&logo=adobeacrobatreader&logoColor=white&color=black&labelColor=ec1c24) | [Skills measured](AZ-204_StudyGuide_ENU_FY23Q3_v2.pdf) |
+| ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) | [Study Guide](https://learn.microsoft.com/en-gb/certifications/resources/study-guides/AZ-204) |
+| ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) | [Exam readiness zone](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-204-develop-azure-compute-solutions-1-of-5) |
+| ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) | [Training course](https://learn.microsoft.com/en-us/training/courses/az-204t00) |
+| ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) | [Azure CLI commands](./AzureCLI.md) |
+| ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) | [Powershell cmdlets](./powershell.md) |
+| ![Pluralsight](https://img.shields.io/badge/Pluralsight-EE3057?style=for-the-badge&logo=pluralsight&logoColor=white) | [Learning Path](https://app.pluralsight.com/paths/certificate/developing-solutions-for-microsoft-azure-az-204) |
+| ![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white) | [Certification course](https://www.udemy.com/course/azure-certification-1/) |
+| ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) | [Azure Naming Conventions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming) |
+
 
