@@ -1,23 +1,30 @@
 # Azure CLI
 
 ## Installation
->  🌟 [Install Azure CLI Locally](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) 🌟
+![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white)  <br />
+[Install Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)   
 
-> Run on Docker Container <br />
-> `docker run -it mcr.microsoft.com/azure-cli`
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)  <br />
+***Run on Docker Container***
+
+```docker
+docker run -it mcr.microsoft.com/azure-cli
+```
 
 ## Commands syntax
-🌟 ***Syntax pattern*** 🌟
-> `command group + command subgroup + command + --parameters`
+### Syntax ![Syntax](https://img.shields.io/badge/-blue?logo=pinboard) 
+`[group]  [subgroup]  [command] [--parameters]`
+
+### Example ![Example](https://img.shields.io/badge/-green?logo=pinboard)
+`az storage account create --name myStorageAccount`
 
 
-*Example*:
-> `az storage account create --name myStorageAccount`
-> | command | subgroup | command | parameters |
-> | ------- | -------- | ------- | ---------- |
-> | storage | account | create | name |
+| command | subgroup | command | parameters |
+| ------- | -------- | ------- | ---------- |
+| storage | account | create | name |
 
-🌟 ***Command Groups*** 🌟
+
+### Command Groups
 
 | Command | Description |
 | ----- | ----------------------- |
@@ -34,9 +41,10 @@
 | az eventgrid | Manage Event grids |
 | az cosmosdb | Manage Cosmos db |
 
-For complete commands list - [Commands Reference](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
+![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white)
+[Commands Reference](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 
-🌟 ***Commands*** 🌟
+### Commands
 | Command | Description | Example |
 | ------- | ----------- | ------- |
 | create  | create a resource | `az storage account create --name  myStorageAccount` |
@@ -44,7 +52,7 @@ For complete commands list - [Commands Reference](https://learn.microsoft.com/en
 | delete    | delete a resources | `az group delete --name myResourceGroup` |
 | list    | list resources | `az functionapp list` |
 
-🌟 ***Parameters*** 🌟
+### Parameters
 | Parameter | Short hand | Description |
 | --------- | ---------- | ---------- |
 | --resource-group |  -g | Resource group associated with the resource |
@@ -52,7 +60,7 @@ For complete commands list - [Commands Reference](https://learn.microsoft.com/en
 | --name | -n | name of the resource |
 | --output | -o | formate output |
 
-🌟 ***Command output format*** 🌟
+### Command output format
 use --output (--out or -o) parameter to format CLI output
 
 | --output | Description |
@@ -65,9 +73,8 @@ use --output (--out or -o) parameter to format CLI output
 | tsv | Tab-separated values, with no keys |
 | none | No output other than errors and warnings |
 
-For detailed output Formates refer [Output formats for Azure CLI commands](https://learn.microsoft.com/en-us/cli/azure/format-output-azure-cli)
-
-🌟 ***Query command outputs*** 🌟
+![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white) 
+[Output formats for Azure CLI commands](https://learn.microsoft.com/en-us/cli/azure/format-output-azure-cli)
 
 ## Login 
 ```
@@ -100,8 +107,6 @@ az login
     ```
     az group create --name MyResourceGroup --location southindia
     ```
-
-- 
 
 
 
